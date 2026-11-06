@@ -1,13 +1,66 @@
 ---
-title: "Welcome"
+title: "High School 5K Times: Freshman vs. Senior Year"
+execute:
+  echo: false
+  warning: false
+  message: false
 ---
 
-Welcome to my website! This site is built with [Quarto](https://quarto.org).
+```{r}
+library(tidyverse)
 
-## What you'll find here
+# Read the matched 5K dataset and convert seconds to minutes
+xc_long <- read_csv("hs_5k_freshman_senior.csv") |>
+  pivot_longer(
+    cols = c(freshman_seconds, senior_seconds),
+    names_to = "year",
+    values_to = "time_seconds"
+  ) |>
+  mutate(
+    year = if_else(year == "freshman_seconds", "Freshman", "Senior"),
+    time_minutes = time_seconds / 60
+  )
+```
 
-Use this space to introduce your website and share what visitors can explore.
+## Women's 5K Times (Freshman vs. Senior)
 
-## Getting started
+```{r}
+# Filter for women and plot each runner's time as a dot
+xc_long |>
+  filter(gender == "Women") |>
+  ggplot(aes(x = time_minutes, fill = year, color = year)) +
+  geom_dotplot(binwidth = 0.25, stackgroups = FALSE, binpositions = "all", alpha = 0.6, dotsize = 0.7) +
+  scale_fill_manual(values = c("Freshman" = "blue", "Senior" = "red")) +
+  scale_color_manual(values = c("Freshman" = "blue", "Senior" = "red")) +
+  scale_y_continuous(NULL, breaks = NULL) +
+  labs(
+    title = "Women's High School 5K Times: Freshman vs. Senior Year",
+    subtitle = "Each dot represents one runner (500 runners tracked from 9th to 12th grade)",
+    x = "5K Time (Minutes)",
+    fill = "Grade",
+    color = "Grade"
+  ) +
+  theme_minimal()
+```
 
-Edit this page and [the About page](about.qmd) to add your own content.
+## Men's 5K Times (Freshman vs. Senior)
+
+```{r}
+# Filter for men and plot each runner's time as a dot
+xc_long |>
+  filter(gender == "Men") |>
+  ggplot(aes(x = time_minutes, fill = year, color = year)) +
+  geom_dotplot(binwidth = 0.25, stackgroups = FALSE, binpositions = "all", alpha = 0.6, dotsize = 0.7) +
+  scale_fill_manual(values = c("Freshman" = "blue", "Senior" = "red")) +
+  scale_color_manual(values = c("Freshman" = "blue", "Senior" = "red")) +
+  scale_y_continuous(NULL, breaks = NULL) +
+  labs(
+    title = "Men's High School 5K Times: Freshman vs. Senior Year",
+    subtitle = "Each dot represents one runner (500 runners tracked from 9th to 12th grade)",
+    x = "5K Time (Minutes)",
+    fill = "Grade",
+    color = "Grade"
+  ) +
+  theme_minimal()
+```
+
