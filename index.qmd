@@ -1,0 +1,13 @@
+---
+title: "Welcome"
+---
+
+Welcome to my website! This site is built with [Quarto](https://quarto.org).
+
+## What you'll find here
+
+Use this space to introduce your website and share what visitors can explore.
+
+## Getting started
+
+Edit this page and [the About page](about.qmd) to add your own content.
