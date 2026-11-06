@@ -25,17 +25,25 @@ xc_long <- read_csv("hs_5k_freshman_senior.csv") |>
 ## Women's 5K Times (Freshman vs. Senior)
 
 ```{r}
-# Filter for women and plot each runner's time as a dot
+#| fig-width: 10
+#| fig-height: 6
+# Filter for women and stack all 1,000 dots (500 blue + 500 red) with no overlap
 xc_long |>
   filter(gender == "Women") |>
   ggplot(aes(x = time_minutes, fill = year, color = year)) +
-  geom_dotplot(binwidth = 0.25, stackgroups = FALSE, binpositions = "all", alpha = 0.6, dotsize = 0.7) +
+  geom_dotplot(
+    binwidth = 0.2,
+    stackgroups = TRUE,
+    binpositions = "all",
+    dotsize = 0.55,
+    stackratio = 1.05
+  ) +
   scale_fill_manual(values = c("Freshman" = "blue", "Senior" = "red")) +
   scale_color_manual(values = c("Freshman" = "blue", "Senior" = "red")) +
   scale_y_continuous(NULL, breaks = NULL) +
   labs(
     title = "Women's High School 5K Times: Freshman vs. Senior Year",
-    subtitle = "Each dot represents one runner (500 runners tracked from 9th to 12th grade)",
+    subtitle = "1,000 dots total: each of the 500 runners has 1 blue dot (Freshman) and 1 red dot (Senior)",
     x = "5K Time (Minutes)",
     fill = "Grade",
     color = "Grade"
@@ -46,17 +54,25 @@ xc_long |>
 ## Men's 5K Times (Freshman vs. Senior)
 
 ```{r}
-# Filter for men and plot each runner's time as a dot
+#| fig-width: 10
+#| fig-height: 6
+# Filter for men and stack all 1,000 dots (500 blue + 500 red) with no overlap
 xc_long |>
   filter(gender == "Men") |>
   ggplot(aes(x = time_minutes, fill = year, color = year)) +
-  geom_dotplot(binwidth = 0.25, stackgroups = FALSE, binpositions = "all", alpha = 0.6, dotsize = 0.7) +
+  geom_dotplot(
+    binwidth = 0.2,
+    stackgroups = TRUE,
+    binpositions = "all",
+    dotsize = 0.55,
+    stackratio = 1.05
+  ) +
   scale_fill_manual(values = c("Freshman" = "blue", "Senior" = "red")) +
   scale_color_manual(values = c("Freshman" = "blue", "Senior" = "red")) +
   scale_y_continuous(NULL, breaks = NULL) +
   labs(
     title = "Men's High School 5K Times: Freshman vs. Senior Year",
-    subtitle = "Each dot represents one runner (500 runners tracked from 9th to 12th grade)",
+    subtitle = "1,000 dots total: each of the 500 runners has 1 blue dot (Freshman) and 1 red dot (Senior)",
     x = "5K Time (Minutes)",
     fill = "Grade",
     color = "Grade"
