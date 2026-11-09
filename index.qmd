@@ -22,6 +22,29 @@ xc_long <- read_csv("hs_5k_freshman_senior.csv") |>
   )
 ```
 
+## Average 5K Times (Freshman vs. Senior)
+
+```{r}
+# Calculate average 5K times in minutes and format as MM:SS
+xc_long |>
+  summarize(
+    avg_seconds = mean(time_seconds),
+    .by = c(gender, year)
+  ) |>
+  mutate(
+    # Convert total seconds into M:SS string alongside decimal minutes
+    avg_time = sprintf(
+      "%d:%02d (%.2f min)",
+      floor(avg_seconds / 60),
+      round(avg_seconds %% 60),
+      avg_seconds / 60
+    )
+  ) |>
+  select(Gender = gender, year, avg_time) |>
+  pivot_wider(names_from = year, values_from = avg_time) |>
+  knitr::kable()
+```
+
 ## Women's 5K Times (Freshman vs. Senior)
 
 ```{r}

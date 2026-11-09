@@ -4,6 +4,8 @@ project:
 website:
   title: "My Quarto Website"
   navbar:
+    background: "#2e6f40"
+    foreground: "#ffffff"
     left:
       - href: index.qmd
         text: Home
@@ -12,5 +14,8 @@ website:
 
 format:
   html:
-    theme: cosmo
+    theme: minty
+    backgroundcolor: "#eef7f0"
+    fontcolor: "#1b3b24"
+    linkcolor: "#2e6f40"
     toc: true
