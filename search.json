@@ -4,41 +4,55 @@
     "href": "index.html",
     "title": "High School 5K Times: Freshman vs. Senior Year",
     "section": "",
-    "text": "Gender\nFreshman\nSenior\n\n\n\n\nMen\n19:29 (19.48 min)\n18:17 (18.28 min)\n\n\nWomen\n22:28 (22.46 min)\n22:19 (22.31 min)"
+    "text": "Gender\nFreshman\nSenior\n\n\n\n\nMen\n19:34 (19.56 min)\n18:22 (18.36 min)\n\n\nWomen\n22:36 (22.61 min)\n22:28 (22.46 min)"
   },
   {
     "objectID": "index.html#average-5k-times-freshman-vs.-senior",
     "href": "index.html#average-5k-times-freshman-vs.-senior",
     "title": "High School 5K Times: Freshman vs. Senior Year",
     "section": "",
-    "text": "Gender\nFreshman\nSenior\n\n\n\n\nMen\n19:29 (19.48 min)\n18:17 (18.28 min)\n\n\nWomen\n22:28 (22.46 min)\n22:19 (22.31 min)"
+    "text": "Gender\nFreshman\nSenior\n\n\n\n\nMen\n19:34 (19.56 min)\n18:22 (18.36 min)\n\n\nWomen\n22:36 (22.61 min)\n22:28 (22.46 min)"
   },
   {
     "objectID": "index.html#womens-5k-times-freshman-vs.-senior",
     "href": "index.html#womens-5k-times-freshman-vs.-senior",
     "title": "High School 5K Times: Freshman vs. Senior Year",
     "section": "Women’s 5K Times (Freshman vs. Senior)",
-    "text": "Women’s 5K Times (Freshman vs. Senior)"
+    "text": "Women’s 5K Times (Freshman vs. Senior)\n\n\n\n\n\n\n\nHover over any dot to see the runner's Freshman and Senior 5K times."
   },
   {
     "objectID": "index.html#mens-5k-times-freshman-vs.-senior",
     "href": "index.html#mens-5k-times-freshman-vs.-senior",
     "title": "High School 5K Times: Freshman vs. Senior Year",
     "section": "Men’s 5K Times (Freshman vs. Senior)",
-    "text": "Men’s 5K Times (Freshman vs. Senior)"
+    "text": "Men’s 5K Times (Freshman vs. Senior)\n\n\n\n\n\n\n\nHover over any dot to see the runner's Freshman and Senior 5K times."
+  },
+  {
+    "objectID": "index.html#summary",
+    "href": "index.html#summary",
+    "title": "High School 5K Times: Freshman vs. Senior Year",
+    "section": "Summary",
+    "text": "Summary\nComparing the two distributions reveals a clear difference in average 5K time improvement between men and women from freshman to senior year. Men improved substantially on average, dropping 1 minute and 12 seconds from 19:34 as freshmen to 18:22 as seniors (with 87% of male runners recording a faster senior time, visible in the clear leftward shift of the red dots). In contrast, women showed a much smaller average improvement of 9 seconds, moving from 22:36 to 22:28 (with 59% running faster as seniors and the freshman and senior distributions largely overlapping).\nData Source: Ohio High School Athletic Association (OHSAA) District Cross Country Championship results (2011–2020), archived on Baum’s Page."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Replace this text with a short introduction about yourself and the purpose of your website."
+    "text": "I am a freshman at New College of Florida majoring in biology."
   },
   {
-    "objectID": "about.html#about-this-site",
-    "href": "about.html#about-this-site",
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
     "title": "About",
     "section": "",
-    "text": "Replace this text with a short introduction about yourself and the purpose of your website."
+    "text": "I am a freshman at New College of Florida majoring in biology."
+  },
+  {
+    "objectID": "about.html#about-this-project",
+    "href": "about.html#about-this-project",
+    "title": "About",
+    "section": "About This Project",
+    "text": "About This Project\nIn this project, I am researching how age correlates with racing time improvement by comparing runners’ 5K cross country times from their freshman to senior years."
   }
 ]
