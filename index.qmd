@@ -103,6 +103,10 @@ xc_long |>
   theme_minimal()
 ```
 
+## Summary
+
+Comparing the two distributions reveals a clear difference in average 5K time improvement between men and women from freshman to senior year. Men improved substantially on average, dropping **1 minute and 12 seconds** from **19:29** as freshmen to **18:17** as seniors (with 88% of male runners recording a faster senior time, visible in the clear leftward shift of the red dots). In contrast, women showed a much smaller average improvement of **9 seconds**, moving from **22:28** to **22:19** (with 57% running faster as seniors and the freshman and senior distributions largely overlapping).
+
 **Data Source:** Ohio High School Athletic Association (OHSAA) District Cross Country Championship results (2014–2019), archived on [Baum's Page](https://www.baumspage.com/cc/index.php).
 
 
