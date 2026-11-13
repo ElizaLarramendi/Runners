@@ -117,7 +117,7 @@ make_interactive_dotplot <- \(data, target_gender, plot_title, card_id) {
             marker: { color: '#ff2222', size: 9.5, line: { color: '#ffffff', width: 2 } } }
         ]);
 
-        // Index all Freshman (trace 0) and Senior (trace 1) coordinates by athlete_id
+        // Index all Freshman (trace 0) and Senior (trace 1) info by athlete_id
         var lookup = {};
         [0, 1].forEach(function(tIdx) {
           var tr = el.data[tIdx];
@@ -125,7 +125,7 @@ make_interactive_dotplot <- \(data, target_gender, plot_title, card_id) {
             var parts = tr.customdata[i].split('||');
             var id = parts[0];
             if (!lookup[id]) lookup[id] = {};
-            lookup[id][tIdx] = { x: tr.x[i], y: tr.y[i] };
+            lookup[id][tIdx] = { x: tr.x[i], y: tr.y[i], time: parts[2], yr: parts[3] };
           }
         });
 
@@ -133,13 +133,17 @@ make_interactive_dotplot <- \(data, target_gender, plot_title, card_id) {
           var pt = ev.points[0];
           if (pt.curveNumber > 1) return;
           var parts = pt.customdata.split('||');
-          var id = parts[0], name = parts[1], time = parts[2], yr = parts[3], grade = parts[4];
+          var id = parts[0], name = parts[1];
+          var fr = lookup[id] && lookup[id][0];
+          var sr = lookup[id] && lookup[id][1];
 
-          // Show hovered dot's runner name, 5K time, and year in the right-side box
-          box.innerHTML =
-            '<div style=\"font-weight:700; font-size:0.98rem; margin-bottom:6px; color:#1b3b24;\">' + name + '</div>' +
-            '<div style=\"font-size:0.9rem; margin-bottom:3px;\"><b>5K Time:</b> ' + time + '</div>' +
-            '<div style=\"font-size:0.9rem;\"><b>Year:</b> ' + yr + ' (' + grade + ')</div>';
+          // Show runner's name and both Freshman & Senior 5K times in the right-side box
+          if (fr && sr) {
+            box.innerHTML =
+              '<div style=\"font-weight:700; font-size:0.98rem; margin-bottom:6px; color:#1b3b24;\">' + name + '</div>' +
+              '<div style=\"font-size:0.88rem; margin-bottom:4px;\"><span style=\"color:blue;\">&#9679;</span> <b>Freshman (' + fr.yr + '):</b> ' + fr.time + '</div>' +
+              '<div style=\"font-size:0.88rem;\"><span style=\"color:red;\">&#9679;</span> <b>Senior (' + sr.yr + '):</b> ' + sr.time + '</div>';
+          }
 
           // Find and glow the runner's equivalent dot in the other grade
           var partnerTrace = pt.curveNumber === 0 ? 1 : 0;
@@ -168,11 +172,11 @@ make_interactive_dotplot <- \(data, target_gender, plot_title, card_id) {
     div(
       id = card_id,
       style = paste(
-        "width: 210px; flex-shrink: 0; padding: 12px 14px;",
+        "width: 225px; flex-shrink: 0; padding: 12px 14px;",
         "background: #ffffff; border: 1px solid #b7d4c0; border-radius: 8px;",
         "box-shadow: 0 2px 6px rgba(0,0,0,0.06); font-size: 0.9rem; color: #4a6350;"
       ),
-      "Hover over any dot to see the runner's name, 5K time, and year."
+      "Hover over any dot to see the runner's Freshman and Senior 5K times."
     )
   )
 }
