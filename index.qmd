@@ -8,18 +8,174 @@ execute:
 
 ```{r}
 library(tidyverse)
+library(plotly)
+library(htmlwidgets)
+library(htmltools)
 
-# Read the matched 5K dataset and convert seconds to minutes
-xc_long <- read_csv("hs_5k_2000_runners.csv") |>
-  pivot_longer(
-    cols = c(freshman_seconds, senior_seconds),
-    names_to = "year",
-    values_to = "time_seconds"
-  ) |>
-  mutate(
-    year = if_else(year == "freshman_seconds", "Freshman", "Senior"),
-    time_minutes = time_seconds / 60
+# Read the 2,000-runner dataset, keeping 5K time strings as text
+xc_raw <- read_csv(
+  "hs_5k_2000_runners.csv",
+  col_types = cols(
+    freshman_5k_time = col_character(),
+    senior_5k_time = col_character()
   )
+)
+
+# Reshape into one row per race (Freshman and Senior) with matching year and time
+xc_long <- bind_rows(
+  xc_raw |>
+    transmute(
+      athlete_id,
+      name,
+      gender,
+      grade = "Freshman",
+      recorded_year = freshman_year,
+      five_k_time = freshman_5k_time,
+      time_seconds = freshman_seconds,
+      time_minutes = freshman_seconds / 60
+    ),
+  xc_raw |>
+    transmute(
+      athlete_id,
+      name,
+      gender,
+      grade = "Senior",
+      recorded_year = senior_year,
+      five_k_time = senior_5k_time,
+      time_seconds = senior_seconds,
+      time_minutes = senior_seconds / 60
+    )
+)
+
+# Helper to build an interactive stacked dotplot with a right-side info box
+make_interactive_dotplot <- \(data, target_gender, plot_title, card_id) {
+  binwidth <- 0.2
+
+  # Stack Freshman dots (bottom) and Senior dots (top) in 0.2-minute bins
+  dots <- data |>
+    filter(gender == target_gender) |>
+    mutate(
+      x_bin = round(time_minutes / binwidth) * binwidth,
+      grade = factor(grade, levels = c("Freshman", "Senior"))
+    ) |>
+    arrange(x_bin, grade, time_seconds) |>
+    mutate(stack_y = row_number(), .by = x_bin)
+
+  fr_dots <- filter(dots, grade == "Freshman")
+  sr_dots <- filter(dots, grade == "Senior")
+
+  p <- plot_ly(height = 600) |>
+    # Trace 0: Blue Freshman dots
+    add_markers(
+      data = fr_dots,
+      x = ~x_bin,
+      y = ~stack_y,
+      name = "Freshman",
+      customdata = ~paste(athlete_id, name, five_k_time, recorded_year, "Freshman", sep = "||"),
+      hoverinfo = "none",
+      marker = list(color = "blue", size = 6)
+    ) |>
+    # Trace 1: Red Senior dots
+    add_markers(
+      data = sr_dots,
+      x = ~x_bin,
+      y = ~stack_y,
+      name = "Senior",
+      customdata = ~paste(athlete_id, name, five_k_time, recorded_year, "Senior", sep = "||"),
+      hoverinfo = "none",
+      marker = list(color = "red", size = 6)
+    ) |>
+    layout(
+      hovermode = "closest",
+      hoverdistance = 15,
+      title = list(
+        text = paste0(
+          plot_title,
+          "<br><sup>2,000 dots total: hover over a dot to see runner details and make their other dot glow</sup>"
+        ),
+        x = 0,
+        y = 0.97
+      ),
+      xaxis = list(title = "5K Time (Minutes)", zeroline = FALSE),
+      yaxis = list(title = "", showticklabels = FALSE, showgrid = FALSE, zeroline = FALSE),
+      legend = list(orientation = "h", x = 1, xanchor = "right", y = 0.98, yanchor = "top"),
+      margin = list(t = 95, r = 10, b = 50, l = 15),
+      paper_bgcolor = "rgba(0,0,0,0)",
+      plot_bgcolor = "rgba(0,0,0,0)"
+    ) |>
+    config(displayModeBar = FALSE) |>
+    onRender(
+      "function(el, x, cardId) {
+        var box = document.getElementById(cardId);
+        // Add 3 concentric glow traces (indices 2, 3, 4) for the partner dot
+        Plotly.addTraces(el, [
+          { type: 'scatter', mode: 'markers', x: [], y: [], showlegend: false, hoverinfo: 'skip',
+            marker: { color: '#ffd700', size: 26, opacity: 0.35 } },
+          { type: 'scatter', mode: 'markers', x: [], y: [], showlegend: false, hoverinfo: 'skip',
+            marker: { color: '#ffee00', size: 16, opacity: 0.75 } },
+          { type: 'scatter', mode: 'markers', x: [], y: [], showlegend: false, hoverinfo: 'skip',
+            marker: { color: '#ff2222', size: 9.5, line: { color: '#ffffff', width: 2 } } }
+        ]);
+
+        // Index all Freshman (trace 0) and Senior (trace 1) coordinates by athlete_id
+        var lookup = {};
+        [0, 1].forEach(function(tIdx) {
+          var tr = el.data[tIdx];
+          for (var i = 0; i < tr.x.length; i++) {
+            var parts = tr.customdata[i].split('||');
+            var id = parts[0];
+            if (!lookup[id]) lookup[id] = {};
+            lookup[id][tIdx] = { x: tr.x[i], y: tr.y[i] };
+          }
+        });
+
+        el.on('plotly_hover', function(ev) {
+          var pt = ev.points[0];
+          if (pt.curveNumber > 1) return;
+          var parts = pt.customdata.split('||');
+          var id = parts[0], name = parts[1], time = parts[2], yr = parts[3], grade = parts[4];
+
+          // Show hovered dot's runner name, 5K time, and year in the right-side box
+          box.innerHTML =
+            '<div style=\"font-weight:700; font-size:0.98rem; margin-bottom:6px; color:#1b3b24;\">' + name + '</div>' +
+            '<div style=\"font-size:0.9rem; margin-bottom:3px;\"><b>5K Time:</b> ' + time + '</div>' +
+            '<div style=\"font-size:0.9rem;\"><b>Year:</b> ' + yr + ' (' + grade + ')</div>';
+
+          // Find and glow the runner's equivalent dot in the other grade
+          var partnerTrace = pt.curveNumber === 0 ? 1 : 0;
+          var partnerColor = partnerTrace === 1 ? '#ff2222' : '#2266ff';
+          var partner = lookup[id] && lookup[id][partnerTrace];
+          if (partner) {
+            Plotly.restyle(el, {
+              x: [[partner.x], [partner.x], [partner.x]],
+              y: [[partner.y], [partner.y], [partner.y]]
+            }, [2, 3, 4]);
+            Plotly.restyle(el, { 'marker.color': [partnerColor] }, [4]);
+          }
+        });
+
+        el.on('plotly_unhover', function() {
+          Plotly.restyle(el, { x: [[], [], []], y: [[], [], []] }, [2, 3, 4]);
+        });
+      }",
+      data = card_id
+    )
+
+  # Side-by-side layout: plot on the left, small info box on the right
+  div(
+    style = "display: flex; align-items: center; gap: 16px; width: 100%;",
+    div(style = "flex: 1; min-width: 0;", p),
+    div(
+      id = card_id,
+      style = paste(
+        "width: 210px; flex-shrink: 0; padding: 12px 14px;",
+        "background: #ffffff; border: 1px solid #b7d4c0; border-radius: 8px;",
+        "box-shadow: 0 2px 6px rgba(0,0,0,0.06); font-size: 0.9rem; color: #4a6350;"
+      ),
+      "Hover over any dot to see the runner's name, 5K time, and year."
+    )
+  )
+}
 ```
 
 ## Average 5K Times (Freshman vs. Senior)
@@ -29,10 +185,9 @@ xc_long <- read_csv("hs_5k_2000_runners.csv") |>
 xc_long |>
   summarize(
     avg_seconds = mean(time_seconds),
-    .by = c(gender, year)
+    .by = c(gender, grade)
   ) |>
   mutate(
-    # Convert total seconds into M:SS string alongside decimal minutes
     avg_time = sprintf(
       "%d:%02d (%.2f min)",
       floor(avg_seconds / 60),
@@ -40,67 +195,33 @@ xc_long |>
       avg_seconds / 60
     )
   ) |>
-  select(Gender = gender, year, avg_time) |>
-  pivot_wider(names_from = year, values_from = avg_time) |>
+  select(Gender = gender, grade, avg_time) |>
+  pivot_wider(names_from = grade, values_from = avg_time) |>
   knitr::kable()
 ```
 
 ## Women's 5K Times (Freshman vs. Senior)
 
 ```{r}
-#| fig-width: 10
-#| fig-height: 6
-# Filter for women and stack all 2,000 dots (1,000 blue + 1,000 red) with no overlap
-xc_long |>
-  filter(gender == "Women") |>
-  ggplot(aes(x = time_minutes, fill = year, color = year)) +
-  geom_dotplot(
-    binwidth = 0.2,
-    stackgroups = TRUE,
-    binpositions = "all",
-    dotsize = 0.35,
-    stackratio = 1.05
-  ) +
-  scale_fill_manual(values = c("Freshman" = "blue", "Senior" = "red")) +
-  scale_color_manual(values = c("Freshman" = "blue", "Senior" = "red")) +
-  scale_y_continuous(NULL, breaks = NULL) +
-  labs(
-    title = "Women's High School 5K Times: Freshman vs. Senior Year",
-    subtitle = "2,000 dots total: each of the 1,000 runners has 1 blue dot (Freshman) and 1 red dot (Senior)",
-    x = "5K Time (Minutes)",
-    fill = "Grade",
-    color = "Grade"
-  ) +
-  theme_minimal()
+#| column: body-outset
+make_interactive_dotplot(
+  xc_long,
+  target_gender = "Women",
+  plot_title = "Women's High School 5K Times: Freshman vs. Senior Year",
+  card_id = "women-runner-box"
+)
 ```
 
 ## Men's 5K Times (Freshman vs. Senior)
 
 ```{r}
-#| fig-width: 10
-#| fig-height: 6
-# Filter for men and stack all 2,000 dots (1,000 blue + 1,000 red) with no overlap
-xc_long |>
-  filter(gender == "Men") |>
-  ggplot(aes(x = time_minutes, fill = year, color = year)) +
-  geom_dotplot(
-    binwidth = 0.2,
-    stackgroups = TRUE,
-    binpositions = "all",
-    dotsize = 0.35,
-    stackratio = 1.05
-  ) +
-  scale_fill_manual(values = c("Freshman" = "blue", "Senior" = "red")) +
-  scale_color_manual(values = c("Freshman" = "blue", "Senior" = "red")) +
-  scale_y_continuous(NULL, breaks = NULL) +
-  labs(
-    title = "Men's High School 5K Times: Freshman vs. Senior Year",
-    subtitle = "2,000 dots total: each of the 1,000 runners has 1 blue dot (Freshman) and 1 red dot (Senior)",
-    x = "5K Time (Minutes)",
-    fill = "Grade",
-    color = "Grade"
-  ) +
-  theme_minimal()
+#| column: body-outset
+make_interactive_dotplot(
+  xc_long,
+  target_gender = "Men",
+  plot_title = "Men's High School 5K Times: Freshman vs. Senior Year",
+  card_id = "men-runner-box"
+)
 ```
 
 ## Summary
@@ -108,5 +229,3 @@ xc_long |>
 Comparing the two distributions reveals a clear difference in average 5K time improvement between men and women from freshman to senior year. Men improved substantially on average, dropping **1 minute and 12 seconds** from **19:34** as freshmen to **18:22** as seniors (with 87% of male runners recording a faster senior time, visible in the clear leftward shift of the red dots). In contrast, women showed a much smaller average improvement of **9 seconds**, moving from **22:36** to **22:28** (with 59% running faster as seniors and the freshman and senior distributions largely overlapping).
 
 **Data Source:** Ohio High School Athletic Association (OHSAA) District Cross Country Championship results (2011–2020), archived on [Baum's Page](https://www.baumspage.com/cc/index.php).
-
-
