@@ -103,3 +103,6 @@ xc_long |>
   theme_minimal()
 ```
 
+**Data Source:** Ohio High School Athletic Association (OHSAA) District Cross Country Championship results (2014–2019), archived on [Baum's Page](https://www.baumspage.com/cc/index.php).
+
+

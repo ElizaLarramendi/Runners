@@ -2,7 +2,10 @@
 title: "About"
 ---
 
-## About this site
+## About Me
 
-Replace this text with a short introduction about yourself and the purpose of
-your website.
+I am a freshman at New College of Florida majoring in biology.
+
+## About This Project
+
+In this project, I am researching how age correlates with racing time improvement by comparing runners' 5K cross country times from their freshman to senior years.

@@ -25,14 +25,14 @@
     "href": "index.html#mens-5k-times-freshman-vs.-senior",
     "title": "High School 5K Times: Freshman vs. Senior Year",
     "section": "Men’s 5K Times (Freshman vs. Senior)",
-    "text": "Men’s 5K Times (Freshman vs. Senior)"
+    "text": "Men’s 5K Times (Freshman vs. Senior)\n\n\n\n\n\n\n\n\n\nData Source: Ohio High School Athletic Association (OHSAA) District Cross Country Championship results (2014–2019), archived on Baum’s Page."
   },
   {
     "objectID": "about.html",
     "href": "about.html",
     "title": "About",
     "section": "",
-    "text": "Replace this text with a short introduction about yourself and the purpose of your website."
+    "text": "I am a freshman at New College of Florida majoring in biology."
   },
   {
     "objectID": "about.html#about-this-site",
@@ -40,5 +40,19 @@
     "title": "About",
     "section": "",
     "text": "Replace this text with a short introduction about yourself and the purpose of your website."
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "About",
+    "section": "",
+    "text": "I am a freshman at New College of Florida majoring in biology."
+  },
+  {
+    "objectID": "about.html#about-this-project",
+    "href": "about.html#about-this-project",
+    "title": "About",
+    "section": "About This Project",
+    "text": "About This Project\nIn this project, I am researching how age correlates with racing time improvement by comparing runners’ 5K cross country times from their freshman to senior years."
   }
 ]
