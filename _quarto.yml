@@ -2,7 +2,7 @@ project:
   type: website
 
 website:
-  title: "My Quarto Website"
+  title: "Runners Improvement"
   navbar:
     background: "#2e6f40"
     foreground: "#ffffff"
