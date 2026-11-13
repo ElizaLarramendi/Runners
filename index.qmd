@@ -10,7 +10,7 @@ execute:
 library(tidyverse)
 
 # Read the matched 5K dataset and convert seconds to minutes
-xc_long <- read_csv("hs_5k_freshman_senior.csv") |>
+xc_long <- read_csv("hs_5k_2000_runners.csv") |>
   pivot_longer(
     cols = c(freshman_seconds, senior_seconds),
     names_to = "year",
@@ -50,7 +50,7 @@ xc_long |>
 ```{r}
 #| fig-width: 10
 #| fig-height: 6
-# Filter for women and stack all 1,000 dots (500 blue + 500 red) with no overlap
+# Filter for women and stack all 2,000 dots (1,000 blue + 1,000 red) with no overlap
 xc_long |>
   filter(gender == "Women") |>
   ggplot(aes(x = time_minutes, fill = year, color = year)) +
@@ -58,7 +58,7 @@ xc_long |>
     binwidth = 0.2,
     stackgroups = TRUE,
     binpositions = "all",
-    dotsize = 0.55,
+    dotsize = 0.35,
     stackratio = 1.05
   ) +
   scale_fill_manual(values = c("Freshman" = "blue", "Senior" = "red")) +
@@ -66,7 +66,7 @@ xc_long |>
   scale_y_continuous(NULL, breaks = NULL) +
   labs(
     title = "Women's High School 5K Times: Freshman vs. Senior Year",
-    subtitle = "1,000 dots total: each of the 500 runners has 1 blue dot (Freshman) and 1 red dot (Senior)",
+    subtitle = "2,000 dots total: each of the 1,000 runners has 1 blue dot (Freshman) and 1 red dot (Senior)",
     x = "5K Time (Minutes)",
     fill = "Grade",
     color = "Grade"
@@ -79,7 +79,7 @@ xc_long |>
 ```{r}
 #| fig-width: 10
 #| fig-height: 6
-# Filter for men and stack all 1,000 dots (500 blue + 500 red) with no overlap
+# Filter for men and stack all 2,000 dots (1,000 blue + 1,000 red) with no overlap
 xc_long |>
   filter(gender == "Men") |>
   ggplot(aes(x = time_minutes, fill = year, color = year)) +
@@ -87,7 +87,7 @@ xc_long |>
     binwidth = 0.2,
     stackgroups = TRUE,
     binpositions = "all",
-    dotsize = 0.55,
+    dotsize = 0.35,
     stackratio = 1.05
   ) +
   scale_fill_manual(values = c("Freshman" = "blue", "Senior" = "red")) +
@@ -95,7 +95,7 @@ xc_long |>
   scale_y_continuous(NULL, breaks = NULL) +
   labs(
     title = "Men's High School 5K Times: Freshman vs. Senior Year",
-    subtitle = "1,000 dots total: each of the 500 runners has 1 blue dot (Freshman) and 1 red dot (Senior)",
+    subtitle = "2,000 dots total: each of the 1,000 runners has 1 blue dot (Freshman) and 1 red dot (Senior)",
     x = "5K Time (Minutes)",
     fill = "Grade",
     color = "Grade"
@@ -107,6 +107,6 @@ xc_long |>
 
 Comparing the two distributions reveals a clear difference in average 5K time improvement between men and women from freshman to senior year. Men improved substantially on average, dropping **1 minute and 12 seconds** from **19:29** as freshmen to **18:17** as seniors (with 88% of male runners recording a faster senior time, visible in the clear leftward shift of the red dots). In contrast, women showed a much smaller average improvement of **9 seconds**, moving from **22:28** to **22:19** (with 57% running faster as seniors and the freshman and senior distributions largely overlapping).
 
-**Data Source:** Ohio High School Athletic Association (OHSAA) District Cross Country Championship results (2014–2019), archived on [Baum's Page](https://www.baumspage.com/cc/index.php).
+**Data Source:** Ohio High School Athletic Association (OHSAA) District Cross Country Championship results (2011–2020), archived on [Baum's Page](https://www.baumspage.com/cc/index.php).
 
 
