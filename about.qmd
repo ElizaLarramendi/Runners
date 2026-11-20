@@ -4,7 +4,9 @@ title: "About"
 
 ## About Me
 
-I am a freshman at New College of Florida majoring in biology.
+I am a freshman at [New College of Florida](https://www.ncf.edu) majoring in biology.
+
+You can contact me at [E.larramendi-cruz30@ncf.edu](mailto:E.larramendi-cruz30@ncf.edu) or visit my [GitHub profile](https://github.com/ElizaLarramendi).
 
 ## About This Project
 
