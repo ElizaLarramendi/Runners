@@ -54,5 +54,40 @@
     "title": "About",
     "section": "About This Project",
     "text": "About This Project\nThis project explores how high school cross country runners’ 5K race times develop as athletes mature from freshman to senior year. By tracking individual runners over their high school careers, the project investigates whether age and physical development correlate with performance gains, and how those trends differ by gender.\n\nData & Methodology\nThe analysis uses longitudinal race data from 2,000 high school athletes (1,000 men and 1,000 women) competing in the Ohio High School Athletic Association (OHSAA) District Cross Country Championships between 2011 and 2020, archived on Baum’s Page. Each runner in the dataset has recorded 5K times from both their freshman and senior seasons, allowing for direct paired comparisons.\n\n\nKey Insights\n\nMen’s Progression: Male runners showed a substantial average improvement of 1 minute and 12 seconds, dropping from an average freshman time of 19:34 to 18:22 as seniors, with 87% running faster in their final year.\nWomen’s Progression: Female runners showed a more modest average improvement of 9 seconds, moving from 22:36 as freshmen to 22:28 as seniors, with 59% improving their times.\nInteractive Exploration: The project features interactive stacked dotplots where readers can hover over individual runners to trace their personal performance progression between freshman and senior year."
+  },
+  {
+    "objectID": "spotlight.html",
+    "href": "spotlight.html",
+    "title": "Runner Spotlight",
+    "section": "",
+    "text": "This spotlight highlights standout athletes from our dataset of 2,000 Ohio high school cross country runners: the top 3 fastest runners and the top 3 who showed the most improvement from freshman to senior year, for both men and women (12 athletes total)."
+  },
+  {
+    "objectID": "spotlight.html#fastest-runners",
+    "href": "spotlight.html#fastest-runners",
+    "title": "Runner Spotlight",
+    "section": "Fastest Runners",
+    "text": "Fastest Runners\nThese runners clocked the fastest 5K times in their senior season.\n\nMen\n\n\n\n\n\nRank\nRunner\nSchool\nSenior 5K Time\nFreshman 5K Time\n\n\n\n\n1\nCaleb Brown\nShelby\n14:51:00\n16:58:00\n\n\n2\nVincent Mauri\nHowland\n14:54:00\n17:13:00\n\n\n3\nDustin Horter\nLak. East\n14:58:00\n15:42:00\n\n\n\n\n\n\n\nWomen\n\n\n\n\n\n\n\n\n\n\n\n\nRank\nRunner\nSchool\nSenior 5K Time\nFreshman 5K Time\n\n\n\n\n1\nTaylor Ewert\nBeavercreek\n17:03:00\n18:44:00\n\n\n2\nOlivia Howell\nSolon\n17:52:00\n18:35:00\n\n\n3\nAthena Welsh\nSt. Thomas Aquinas\n18:01:00\n19:59:00"
+  },
+  {
+    "objectID": "spotlight.html#most-improved-runners",
+    "href": "spotlight.html#most-improved-runners",
+    "title": "Runner Spotlight",
+    "section": "Most Improved Runners",
+    "text": "Most Improved Runners\nThese athletes achieved the largest time drop between freshman and senior year.\n\nMen\n\n\n\n\n\n\n\n\n\n\n\n\n\nRank\nRunner\nSchool\nTime Dropped\nFreshman 5K\nSenior 5K\n\n\n\n\n1\nEli Marshall\nMcD. Northwest\n9 min 40 sec\n28:32:00\n18:52:00\n\n\n2\nOmavi Hamilton\nEastmoor Acad.\n9 min 24 sec\n25:49:00\n16:24:00\n\n\n3\nQuinten Boggs\nChillicothe\n9 min 07 sec\n27:59:00\n18:52:00\n\n\n\n\n\n\n\nWomen\n\n\n\n\n\n\n\n\n\n\n\n\n\nRank\nRunner\nSchool\nTime Dropped\nFreshman 5K\nSenior 5K\n\n\n\n\n1\nLainee Stiver\nValley View\n10 min 24 sec\n31:58:00\n21:34:00\n\n\n2\nTalena Starn\nStrasburg-Franklin\n6 min 01 sec\n26:39:00\n20:38:00\n\n\n3\nAshlee Drury\nCardington-Lincoln\n5 min 48 sec\n37:41:00\n31:52:00"
+  },
+  {
+    "objectID": "courses.html",
+    "href": "courses.html",
+    "title": "Cross Country Courses",
+    "section": "",
+    "text": "Below is a random sample of 10 runners from the dataset, highlighting the regional Ohio championship courses where they competed, their race times, and the course conditions:\n\n\n\n\n\n\n\n\n\n\nCourse Name\nRunner\nYear\n5K Time\nCourse Description & Conditions\n\n\n\n\nCedarville University (Elvin R. King Course)\nElias Bezy\n2018\n19:40\nRolling grass terrain with two gradual inclines; firm footing, open and breezy.\n\n\nLorain County Community College\nRyan Cummings\n2016\n18:25\nWooded trails that turned slick and muddy after rain; tight turns through the trees.\n\n\nDarby Creek Metro Park\nMicaila Mountain\n2012\n22:56\nWide, flat prairie grass trails; dry, firm ground, flat and fast.\n\n\nVoice of America MetroPark\nCasey Murphy\n2015\n21:45\nManicured turf and gravel paths around the lake; wide-open, flat, and very fast.\n\n\nVoice of America MetroPark\nEliza Clark\n2013\n24:53\nFirm turf paths with gusty headwinds along the open reservoir stretches.\n\n\nHedges-Boyer Park (Tiffin)\nMattie Lunceford\n2012\n22:44\nHistoric hilly course featuring the steep “Beast” hill; soft turf with muddy footing near creek crossings.\n\n\nCedarville University (Elvin R. King Course)\nRicky Dungan\n2018\n18:23\nDry, fast crushed-grass terrain with sweeping turns; excellent crisp racing conditions.\n\n\nVoice of America MetroPark\nRyan Cooper\n2014\n17:50\nFlat and fast crushed-limestone and grass loop with optimal racing conditions.\n\n\nHedges-Boyer Park (Tiffin)\nKristina Nusbaum\n2012\n22:13\nChallenging inclines and uneven ground; soft and muddy in low-lying sections.\n\n\nBoardman High School Course\nNatalie Fleming\n2016\n19:29\nMixture of athletic fields and tree-lined dirt trails; flat and fast with a few slick turns.\n\n\n\n\nNote: The dataset (hs_5k_2000_runners.csv) records runner names, schools, years, and times. The course locations and conditions above represent the OHSAA championship host venues where these high schools compete."
+  },
+  {
+    "objectID": "courses.html#sample-of-10-race-courses",
+    "href": "courses.html#sample-of-10-race-courses",
+    "title": "Cross Country Courses",
+    "section": "",
+    "text": "Below is a random sample of 10 runners from the dataset, highlighting the regional Ohio championship courses where they competed, their race times, and the course conditions:\n\n\n\n\n\n\n\n\n\n\nCourse Name\nRunner\nYear\n5K Time\nCourse Description & Conditions\n\n\n\n\nCedarville University (Elvin R. King Course)\nElias Bezy\n2018\n19:40\nRolling grass terrain with two gradual inclines; firm footing, open and breezy.\n\n\nLorain County Community College\nRyan Cummings\n2016\n18:25\nWooded trails that turned slick and muddy after rain; tight turns through the trees.\n\n\nDarby Creek Metro Park\nMicaila Mountain\n2012\n22:56\nWide, flat prairie grass trails; dry, firm ground, flat and fast.\n\n\nVoice of America MetroPark\nCasey Murphy\n2015\n21:45\nManicured turf and gravel paths around the lake; wide-open, flat, and very fast.\n\n\nVoice of America MetroPark\nEliza Clark\n2013\n24:53\nFirm turf paths with gusty headwinds along the open reservoir stretches.\n\n\nHedges-Boyer Park (Tiffin)\nMattie Lunceford\n2012\n22:44\nHistoric hilly course featuring the steep “Beast” hill; soft turf with muddy footing near creek crossings.\n\n\nCedarville University (Elvin R. King Course)\nRicky Dungan\n2018\n18:23\nDry, fast crushed-grass terrain with sweeping turns; excellent crisp racing conditions.\n\n\nVoice of America MetroPark\nRyan Cooper\n2014\n17:50\nFlat and fast crushed-limestone and grass loop with optimal racing conditions.\n\n\nHedges-Boyer Park (Tiffin)\nKristina Nusbaum\n2012\n22:13\nChallenging inclines and uneven ground; soft and muddy in low-lying sections.\n\n\nBoardman High School Course\nNatalie Fleming\n2016\n19:29\nMixture of athletic fields and tree-lined dirt trails; flat and fast with a few slick turns.\n\n\n\n\nNote: The dataset (hs_5k_2000_runners.csv) records runner names, schools, years, and times. The course locations and conditions above represent the OHSAA championship host venues where these high schools compete."
   }
 ]

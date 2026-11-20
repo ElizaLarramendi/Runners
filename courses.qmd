@@ -1,0 +1,22 @@
+---
+title: "Cross Country Courses"
+---
+
+## Sample of 10 Race Courses
+
+Below is a random sample of 10 runners from the dataset, highlighting the regional Ohio championship courses where they competed, their race times, and the course conditions:
+
+| Course Name | Runner | Year | 5K Time | Course Description & Conditions |
+|:---|:---|:---:|:---:|:---|
+| **Cedarville University** (Elvin R. King Course) | Elias Bezy | 2018 | 19:40 | Rolling grass terrain with two gradual inclines; firm footing, open and breezy. |
+| **Lorain County Community College** | Ryan Cummings | 2016 | 18:25 | Wooded trails that turned slick and muddy after rain; tight turns through the trees. |
+| **Darby Creek Metro Park** | Micaila Mountain | 2012 | 22:56 | Wide, flat prairie grass trails; dry, firm ground, flat and fast. |
+| **Voice of America MetroPark** | Casey Murphy | 2015 | 21:45 | Manicured turf and gravel paths around the lake; wide-open, flat, and very fast. |
+| **Voice of America MetroPark** | Eliza Clark | 2013 | 24:53 | Firm turf paths with gusty headwinds along the open reservoir stretches. |
+| **Hedges-Boyer Park** (Tiffin) | Mattie Lunceford | 2012 | 22:44 | Historic hilly course featuring the steep "Beast" hill; soft turf with muddy footing near creek crossings. |
+| **Cedarville University** (Elvin R. King Course) | Ricky Dungan | 2018 | 18:23 | Dry, fast crushed-grass terrain with sweeping turns; excellent crisp racing conditions. |
+| **Voice of America MetroPark** | Ryan Cooper | 2014 | 17:50 | Flat and fast crushed-limestone and grass loop with optimal racing conditions. |
+| **Hedges-Boyer Park** (Tiffin) | Kristina Nusbaum | 2012 | 22:13 | Challenging inclines and uneven ground; soft and muddy in low-lying sections. |
+| **Boardman High School Course** | Natalie Fleming | 2016 | 19:29 | Mixture of athletic fields and tree-lined dirt trails; flat and fast with a few slick turns. |
+
+> *Note: The dataset (`hs_5k_2000_runners.csv`) records runner names, schools, years, and times. The course locations and conditions above represent the OHSAA championship host venues where these high schools compete.*

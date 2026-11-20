@@ -1,0 +1,114 @@
+---
+title: "Runner Spotlight"
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+This spotlight highlights standout athletes from our dataset of 2,000 Ohio high school cross country runners: the top 3 fastest runners and the top 3 who showed the most improvement from freshman to senior year, for both men and women (12 athletes total).
+
+```{r}
+library(readr)
+library(dplyr)
+library(knitr)
+
+# Read runner dataset
+runners <- read_csv("hs_5k_2000_runners.csv", show_col_types = FALSE)
+
+# Standardize name display from "Last, First" to "First Last"
+clean_name <- \(x) {
+  ifelse(grepl(",", x), {
+    parts <- strsplit(x, ",\\s*")
+    sapply(parts, \(p) paste(p[2], p[1]))
+  }, x)
+}
+
+runners <- runners |>
+  mutate(name = clean_name(name))
+
+# Helper to format seconds into minutes and seconds
+format_imp <- \(sec) {
+  mins <- floor(sec / 60)
+  remainder <- round(sec %% 60)
+  sprintf("%d min %02d sec", mins, remainder)
+}
+```
+
+## Fastest Runners
+
+These runners clocked the fastest 5K times in their senior season.
+
+### Men
+
+```{r}
+runners |>
+  filter(gender == "Men") |>
+  arrange(senior_seconds) |>
+  slice_head(n = 3) |>
+  transmute(
+    Rank = row_number(),
+    Runner = name,
+    School = school,
+    `Senior 5K Time` = senior_5k_time,
+    `Freshman 5K Time` = freshman_5k_time
+  ) |>
+  kable()
+```
+
+### Women
+
+```{r}
+runners |>
+  filter(gender == "Women") |>
+  arrange(senior_seconds) |>
+  slice_head(n = 3) |>
+  transmute(
+    Rank = row_number(),
+    Runner = name,
+    School = school,
+    `Senior 5K Time` = senior_5k_time,
+    `Freshman 5K Time` = freshman_5k_time
+  ) |>
+  kable()
+```
+
+## Most Improved Runners
+
+These athletes achieved the largest time drop between freshman and senior year.
+
+### Men
+
+```{r}
+runners |>
+  filter(gender == "Men") |>
+  arrange(desc(improvement_seconds)) |>
+  slice_head(n = 3) |>
+  transmute(
+    Rank = row_number(),
+    Runner = name,
+    School = school,
+    `Time Dropped` = format_imp(improvement_seconds),
+    `Freshman 5K` = freshman_5k_time,
+    `Senior 5K` = senior_5k_time
+  ) |>
+  kable()
+```
+
+### Women
+
+```{r}
+runners |>
+  filter(gender == "Women") |>
+  arrange(desc(improvement_seconds)) |>
+  slice_head(n = 3) |>
+  transmute(
+    Rank = row_number(),
+    Runner = name,
+    School = school,
+    `Time Dropped` = format_imp(improvement_seconds),
+    `Freshman 5K` = freshman_5k_time,
+    `Senior 5K` = senior_5k_time
+  ) |>
+  kable()
+```
