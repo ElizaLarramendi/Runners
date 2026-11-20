@@ -35,11 +35,11 @@ format_imp <- \(sec) {
 }
 ```
 
-## Fastest Runners
+## Men
 
-These runners clocked the fastest 5K times in their senior season.
+### Fastest Men
 
-### Men
+These runners clocked the fastest senior-season 5K times among all male athletes.
 
 ```{r}
 runners |>
@@ -56,28 +56,9 @@ runners |>
   kable()
 ```
 
-### Women
+### Most Improved Men
 
-```{r}
-runners |>
-  filter(gender == "Women") |>
-  arrange(senior_seconds) |>
-  slice_head(n = 3) |>
-  transmute(
-    Rank = row_number(),
-    Runner = name,
-    School = school,
-    `Senior 5K Time` = senior_5k_time,
-    `Freshman 5K Time` = freshman_5k_time
-  ) |>
-  kable()
-```
-
-## Most Improved Runners
-
-These athletes achieved the largest time drop between freshman and senior year.
-
-### Men
+These runners achieved the largest time drop between freshman and senior year.
 
 ```{r}
 runners |>
@@ -95,7 +76,32 @@ runners |>
   kable()
 ```
 
-### Women
+---
+
+## Women
+
+### Fastest Women
+
+These runners clocked the fastest senior-season 5K times among all female athletes.
+
+```{r}
+runners |>
+  filter(gender == "Women") |>
+  arrange(senior_seconds) |>
+  slice_head(n = 3) |>
+  transmute(
+    Rank = row_number(),
+    Runner = name,
+    School = school,
+    `Senior 5K Time` = senior_5k_time,
+    `Freshman 5K Time` = freshman_5k_time
+  ) |>
+  kable()
+```
+
+### Most Improved Women
+
+These runners achieved the largest time drop between freshman and senior year.
 
 ```{r}
 runners |>

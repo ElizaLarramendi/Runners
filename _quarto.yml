@@ -7,14 +7,14 @@ website:
     background: "#2e6f40"
     foreground: "#ffffff"
     left:
-      - href: index.qmd
-        text: Home
       - href: about.qmd
         text: About
-      - href: courses.qmd
-        text: Courses
+      - href: index.qmd
+        text: Data
       - href: spotlight.qmd
         text: Spotlight
+      - href: courses.qmd
+        text: Courses
 
 format:
   html:

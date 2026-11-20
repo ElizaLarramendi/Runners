@@ -2,21 +2,149 @@
 title: "Cross Country Courses"
 ---
 
-## Sample of 10 Race Courses
+::: {.callout-caution}
+## Caution
+The images shown on this page are for reference only to illustrate what the course conditions and terrain would have been like on race day (e.g., muddy wooded trails, steep hill climbs, flat lakeside turf); they do not actually show that course.
+:::
 
-Below is a random sample of 10 runners from the dataset, highlighting the regional Ohio championship courses where they competed, their race times, and the course conditions:
+## Featured Ohio Cross Country Courses
 
-| Course Name | Runner | Year | 5K Time | Course Description & Conditions |
-|:---|:---|:---:|:---:|:---|
-| **Cedarville University** (Elvin R. King Course) | Elias Bezy | 2018 | 19:40 | Rolling grass terrain with two gradual inclines; firm footing, open and breezy. |
-| **Lorain County Community College** | Ryan Cummings | 2016 | 18:25 | Wooded trails that turned slick and muddy after rain; tight turns through the trees. |
-| **Darby Creek Metro Park** | Micaila Mountain | 2012 | 22:56 | Wide, flat prairie grass trails; dry, firm ground, flat and fast. |
-| **Voice of America MetroPark** | Casey Murphy | 2015 | 21:45 | Manicured turf and gravel paths around the lake; wide-open, flat, and very fast. |
-| **Voice of America MetroPark** | Eliza Clark | 2013 | 24:53 | Firm turf paths with gusty headwinds along the open reservoir stretches. |
-| **Hedges-Boyer Park** (Tiffin) | Mattie Lunceford | 2012 | 22:44 | Historic hilly course featuring the steep "Beast" hill; soft turf with muddy footing near creek crossings. |
-| **Cedarville University** (Elvin R. King Course) | Ricky Dungan | 2018 | 18:23 | Dry, fast crushed-grass terrain with sweeping turns; excellent crisp racing conditions. |
-| **Voice of America MetroPark** | Ryan Cooper | 2014 | 17:50 | Flat and fast crushed-limestone and grass loop with optimal racing conditions. |
-| **Hedges-Boyer Park** (Tiffin) | Kristina Nusbaum | 2012 | 22:13 | Challenging inclines and uneven ground; soft and muddy in low-lying sections. |
-| **Boardman High School Course** | Natalie Fleming | 2016 | 19:29 | Mixture of athletic fields and tree-lined dirt trails; flat and fast with a few slick turns. |
+Explore 10 distinct cross country courses across Ohio where high school athletes compete, featuring the runner, their recorded race time and year, and an example of the race conditions that day.
 
-> *Note: The dataset (`hs_5k_2000_runners.csv`) records runner names, schools, years, and times. The course locations and conditions above represent the OHSAA championship host venues where these high schools compete.*
+::: {layout="[1, 2]" layout-valign="center"}
+![](images/cedarville.png){style="border-radius: 8px; width: 100%; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"}
+
+<div>
+### 1. Cedarville University (Elvin R. King Course)
+- **Runner:** Elias Bezy (Lehman Catholic)
+- **Year:** 2018
+- **5K Time:** 19:40
+- **Course Conditions:** Rolling grass terrain with two gradual inclines; firm footing, open and breezy.
+</div>
+:::
+
+---
+
+::: {layout="[1, 2]" layout-valign="center"}
+![](images/lorain_ccc.png){style="border-radius: 8px; width: 100%; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"}
+
+<div>
+### 2. Lorain County Community College Course
+- **Runner:** Ryan Cummings (No. Olmsted)
+- **Year:** 2016
+- **5K Time:** 18:25
+- **Course Conditions:** Wooded trails that turned slick and muddy after morning rain; tight turns through the trees.
+</div>
+:::
+
+---
+
+::: {layout="[1, 2]" layout-valign="center"}
+![](images/darby_creek.png){style="border-radius: 8px; width: 100%; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"}
+
+<div>
+### 3. Battelle Darby Creek Metro Park
+- **Runner:** Micaila Mountain (Grove City)
+- **Year:** 2012
+- **5K Time:** 22:56
+- **Course Conditions:** Wide, flat prairie grass trails; dry, firm ground, flat and fast.
+</div>
+:::
+
+---
+
+::: {layout="[1, 2]" layout-valign="center"}
+![](images/voa_metropark.png){style="border-radius: 8px; width: 100%; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"}
+
+<div>
+### 4. Voice of America MetroPark
+- **Runner:** Casey Murphy (Bellbrook)
+- **Year:** 2015
+- **5K Time:** 21:45
+- **Course Conditions:** Manicured turf and gravel paths around the lake; wide-open, flat, and very fast.
+</div>
+:::
+
+---
+
+::: {layout="[1, 2]" layout-valign="center"}
+![](images/edgewater_park.png){style="border-radius: 8px; width: 100%; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"}
+
+<div>
+### 5. Edgewater Park (Cleveland Metroparks)
+- **Runner:** Eliza Clark (Seven Hills)
+- **Year:** 2013
+- **5K Time:** 24:53
+- **Course Conditions:** Open grassy hills along the lakefront; brisk headwinds off Lake Erie with firm turf footing.
+</div>
+:::
+
+---
+
+::: {layout="[1, 2]" layout-valign="center"}
+![](images/hedges_boyer.png){style="border-radius: 8px; width: 100%; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"}
+
+<div>
+### 6. Hedges-Boyer Park (Tiffin)
+- **Runner:** Mattie Lunceford (Plymouth)
+- **Year:** 2012
+- **5K Time:** 22:44
+- **Course Conditions:** Historic hilly course featuring the steep "Beast" hill; soft turf with muddy footing near creek crossings.
+</div>
+:::
+
+---
+
+::: {layout="[1, 2]" layout-valign="center"}
+![](images/fortress_obetz.png){style="border-radius: 8px; width: 100%; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"}
+
+<div>
+### 7. Fortress Obetz
+- **Runner:** Ricky Dungan (Wilmington)
+- **Year:** 2018
+- **5K Time:** 18:23
+- **Course Conditions:** Championship stadium course; wide spectator-lined straightaways, gravel mounds, and fast manicured turf.
+</div>
+:::
+
+---
+
+::: {layout="[1, 2]" layout-valign="center"}
+![](images/sharon_woods.png){style="border-radius: 8px; width: 100%; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"}
+
+<div>
+### 8. Sharon Woods Metro Park
+- **Runner:** Ryan Cooper (Batavia)
+- **Year:** 2014
+- **5K Time:** 17:50
+- **Course Conditions:** Scenic lakeside loop with gentle rolling hills; well-packed dirt and crushed gravel under crisp autumn skies.
+</div>
+:::
+
+---
+
+::: {layout="[1, 2]" layout-valign="center"}
+![](images/scioto_grove.png){style="border-radius: 8px; width: 100%; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"}
+
+<div>
+### 9. Scioto Grove Metro Park
+- **Runner:** Kristina Nusbaum (Carey)
+- **Year:** 2012
+- **5K Time:** 22:13
+- **Course Conditions:** Open savanna and river bluffs; uneven prairie grass paths with damp, soft turf in low sections.
+</div>
+:::
+
+---
+
+::: {layout="[1, 2]" layout-valign="center"}
+![](images/blendon_woods.png){style="border-radius: 8px; width: 100%; box-shadow: 0 2px 6px rgba(0,0,0,0.1);"}
+
+<div>
+### 10. Blendon Woods Metro Park
+- **Runner:** Natalie Fleming (Woodridge)
+- **Year:** 2016
+- **5K Time:** 19:29
+- **Course Conditions:** Dense fall forest trails and rolling ravines; leaf-covered dirt paths with slick roots and tight turns.
+</div>
+:::
