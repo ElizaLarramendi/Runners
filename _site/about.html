@@ -119,7 +119,11 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#about-me" id="toc-about-me" class="nav-link active" data-scroll-target="#about-me">About Me</a></li>
-  <li><a href="#about-this-project" id="toc-about-this-project" class="nav-link" data-scroll-target="#about-this-project">About This Project</a></li>
+  <li><a href="#about-this-project" id="toc-about-this-project" class="nav-link" data-scroll-target="#about-this-project">About This Project</a>
+  <ul class="collapse">
+  <li><a href="#data-methodology" id="toc-data-methodology" class="nav-link" data-scroll-target="#data-methodology">Data &amp; Methodology</a></li>
+  <li><a href="#key-insights" id="toc-key-insights" class="nav-link" data-scroll-target="#key-insights">Key Insights</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -152,9 +156,21 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="about-this-project" class="level2">
 <h2 class="anchored" data-anchor-id="about-this-project">About This Project</h2>
-<p>In this project, I am researching how age correlates with racing time improvement by comparing runners’ 5K cross country times from their freshman to senior years.</p>
+<p>This project explores how high school cross country runners’ 5K race times develop as athletes mature from freshman to senior year. By tracking individual runners over their high school careers, the project investigates whether age and physical development correlate with performance gains, and how those trends differ by gender.</p>
+<section id="data-methodology" class="level3">
+<h3 class="anchored" data-anchor-id="data-methodology">Data &amp; Methodology</h3>
+<p>The analysis uses longitudinal race data from 2,000 high school athletes (1,000 men and 1,000 women) competing in the Ohio High School Athletic Association (OHSAA) District Cross Country Championships between 2011 and 2020, archived on <a href="https://www.baumspage.com/cc/index.php">Baum’s Page</a>. Each runner in the dataset has recorded 5K times from both their freshman and senior seasons, allowing for direct paired comparisons.</p>
+</section>
+<section id="key-insights" class="level3">
+<h3 class="anchored" data-anchor-id="key-insights">Key Insights</h3>
+<ul>
+<li><strong>Men’s Progression:</strong> Male runners showed a substantial average improvement of <strong>1 minute and 12 seconds</strong>, dropping from an average freshman time of 19:34 to 18:22 as seniors, with 87% running faster in their final year.</li>
+<li><strong>Women’s Progression:</strong> Female runners showed a more modest average improvement of <strong>9 seconds</strong>, moving from 22:36 as freshmen to 22:28 as seniors, with 59% improving their times.</li>
+<li><strong>Interactive Exploration:</strong> The project features interactive stacked dotplots where readers can hover over individual runners to trace their personal performance progression between freshman and senior year.</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
