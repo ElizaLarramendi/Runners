@@ -2,10 +2,26 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://ElizaLarramendi.github.io/Runners/index.html</loc>
-    <lastmod>2026-11-13T20:25:30.242Z</lastmod>
+    <lastmod>2026-11-20T16:00:36.775Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ElizaLarramendi.github.io/Runners/courses.html</loc>
+    <lastmod>2026-11-20T17:16:24.963Z</lastmod>
   </url>
   <url>
     <loc>https://ElizaLarramendi.github.io/Runners/about.html</loc>
-    <lastmod>2026-11-13T18:35:28.702Z</lastmod>
+    <lastmod>2026-11-21T01:54:18.134Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ElizaLarramendi.github.io/Runners/spotlight.html</loc>
+    <lastmod>2026-11-20T16:59:07.290Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ElizaLarramendi.github.io/Runners/future.html</loc>
+    <lastmod>2026-11-21T02:03:40.211Z</lastmod>
+  </url>
+  <url>
+    <loc>https://ElizaLarramendi.github.io/Runners/summaries.html</loc>
+    <lastmod>2026-11-21T02:11:47.977Z</lastmod>
   </url>
 </urlset>
