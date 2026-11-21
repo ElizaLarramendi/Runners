@@ -35,25 +35,25 @@
     "text": "Summary\nComparing the two distributions reveals a clear difference in average 5K time improvement between men and women from freshman to senior year. Men improved substantially on average, dropping 1 minute and 12 seconds from 19:34 as freshmen to 18:22 as seniors (with 87% of male runners recording a faster senior time, visible in the clear leftward shift of the red dots). In contrast, women showed a much smaller average improvement of 9 seconds, moving from 22:36 to 22:28 (with 59% running faster as seniors and the freshman and senior distributions largely overlapping).\nData Source: Ohio High School Athletic Association (OHSAA) District Cross Country Championship results (2011–2020), archived on Baum’s Page."
   },
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "future.html",
+    "href": "future.html",
+    "title": "Future: Collegiate Running",
     "section": "",
-    "text": "I am a freshman at New College of Florida majoring in biology.\nYou can contact me at E.larramendi-cruz30@ncf.edu or visit my GitHub profile."
+    "text": "This page follows standout high school athletes from our dataset who transitioned to collegiate cross country. In college competition, men typically race the 8K (8,000 meters) and women race the 6K (6,000 meters)."
   },
   {
-    "objectID": "about.html#about-me",
-    "href": "about.html#about-me",
-    "title": "About",
-    "section": "",
-    "text": "I am a freshman at New College of Florida majoring in biology.\nYou can contact me at E.larramendi-cruz30@ncf.edu or visit my GitHub profile."
+    "objectID": "future.html#men-8k",
+    "href": "future.html#men-8k",
+    "title": "Future: Collegiate Running",
+    "section": "Men (8K)",
+    "text": "Men (8K)\nThese athletes moved from high school 5K competition to collegiate 8K races across NCAA Division I and II programs.\n\n\n\n\n\n\n\n\n\n\n\n\n\nRank\nRunner\nHigh School\nSenior 5K Time\nCollege\nCollege 8K Time\n\n\n\n\n1\nVincent Mauri\nHowland\n14:54:00\nArizona State\n22:59:00\n\n\n2\nZach Kreft\nBuckeye Valley\n15:24:00\nWalsh\n23:24:00\n\n\n3\nArjun Jha\nThomas Worthington\n14:59:00\nMichigan\n23:42:00\n\n\n4\nZak Kirk\nMaumee\n15:40:00\nPortland\n23:48:00\n\n\n5\nCaleb Brown\nShelby\n14:51:00\nOregon\n23:55:00\n\n\n6\nAndy Payne\nThomas Worthington\n15:17:00\nEastern Michigan\n24:00:00\n\n\n7\nHunter Moore\nOlentangy Orange\n15:16:00\nWalsh\n24:04:00\n\n\n8\nDustin Horter\nLakota East\n14:58:00\nIndiana\n24:06:00\n\n\n9\nBryce Conley\nTippecanoe\n15:48:00\nDayton\n24:13:00\n\n\n10\nMhalicki Bronson\nDefiance\n15:43:00\nMiami (Ohio)\n24:26:00\n\n\n11\nXavier Foehl\nHeath\n15:46:00\nWalsh\n24:27:00\n\n\n12\nSean Carney\nHilliard Darby\n15:42:00\nOhio State\n24:40:00\n\n\n13\nCesar Arellano\nDublin Scioto\n15:30:00\nBowling Green\n24:40:00\n\n\n14\nNick Stricklen\nLexington\n15:22:00\nAkron\n25:54:00"
   },
   {
-    "objectID": "about.html#about-this-project",
-    "href": "about.html#about-this-project",
-    "title": "About",
-    "section": "About This Project",
-    "text": "About This Project\nThis project explores how high school cross country runners’ 5K race times develop as athletes mature from freshman to senior year. By tracking individual runners over their high school careers, the project investigates whether age and physical development correlate with performance gains, and how those trends differ by gender.\n\nData & Methodology\nThe analysis uses longitudinal race data from 2,000 high school athletes (1,000 men and 1,000 women) competing in the Ohio High School Athletic Association (OHSAA) District Cross Country Championships between 2011 and 2020, archived on Baum’s Page. Each runner in the dataset has recorded 5K times from both their freshman and senior seasons, allowing for direct paired comparisons.\n\n\nKey Insights\n\nMen’s Progression: Male runners showed a substantial average improvement of 1 minute and 12 seconds, dropping from an average freshman time of 19:34 to 18:22 as seniors, with 87% running faster in their final year.\nWomen’s Progression: Female runners showed a more modest average improvement of 9 seconds, moving from 22:36 as freshmen to 22:28 as seniors, with 59% improving their times.\nInteractive Exploration: The project features interactive stacked dotplots where readers can hover over individual runners to trace their personal performance progression between freshman and senior year."
+    "objectID": "future.html#women-6k",
+    "href": "future.html#women-6k",
+    "title": "Future: Collegiate Running",
+    "section": "Women (6K)",
+    "text": "Women (6K)\nThese athletes progressed from high school 5K racing to collegiate 6K courses nationwide.\n\n\n\n\n\n\n\n\n\n\n\n\n\nRank\nRunner\nHigh School\nSenior 5K Time\nCollege\nCollege 6K Time\n\n\n\n\n1\nColbi Borland\nBig Walnut\n18:30:00\nLipscomb\n19:37:00\n\n\n2\nOlivia Howell\nSolon\n17:52:00\nTexas\n19:47:00\n\n\n3\nDominique Clairmonte\nLexington\n18:08:00\nNC State\n19:59:00\n\n\n4\nHalle Hamilton\nLexington\n18:35:00\nAir Force\n20:06:00\n\n\n5\nTaylor Ewert\nBeavercreek\n17:03:00\nArkansas\n20:15:00\n\n\n6\nAllison Guagenti\nOlentangy Orange\n18:27:00\nOhio State\n20:40:00\n\n\n7\nKaylie Kenne\nMedina Highland\n18:14:00\nKentucky\n20:51:00\n\n\n8\nAthena Welsh\nSt. Thomas Aquinas\n18:01:00\nToledo\n20:58:00\n\n\n9\nReilly Zink\nGranville\n18:04:00\nSyracuse\n21:14:00\n\n\n10\nJodie Pierce\nBeavercreek\n18:30:00\nFordham\n21:40:00\n\n\n11\nBrittany Atkinson\nLiberty Center\n18:02:00\nOhio State\n22:42:00"
   },
   {
     "objectID": "spotlight.html",
@@ -75,6 +75,27 @@
     "title": "Runner Spotlight",
     "section": "Women",
     "text": "Women\n\nFastest Women\nThese runners clocked the fastest senior-season 5K times among all female athletes.\n\n\n\n\n\n\n\n\n\n\n\n\nRank\nRunner\nSchool\nSenior 5K Time\nFreshman 5K Time\n\n\n\n\n1\nTaylor Ewert\nBeavercreek\n17:03:00\n18:44:00\n\n\n2\nOlivia Howell\nSolon\n17:52:00\n18:35:00\n\n\n3\nAthena Welsh\nSt. Thomas Aquinas\n18:01:00\n19:59:00\n\n\n\n\n\n\n\nMost Improved Women\nThese runners achieved the largest time drop between freshman and senior year.\n\n\n\n\n\n\n\n\n\n\n\n\n\nRank\nRunner\nSchool\nTime Dropped\nFreshman 5K\nSenior 5K\n\n\n\n\n1\nLainee Stiver\nValley View\n10 min 24 sec\n31:58:00\n21:34:00\n\n\n2\nTalena Starn\nStrasburg-Franklin\n6 min 01 sec\n26:39:00\n20:38:00\n\n\n3\nAshlee Drury\nCardington-Lincoln\n5 min 48 sec\n37:41:00\n31:52:00"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "I am a freshman at New College of Florida majoring in biology.\nYou can contact me at E.larramendi-cruz30@ncf.edu or visit my GitHub profile."
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "About",
+    "section": "",
+    "text": "I am a freshman at New College of Florida majoring in biology.\nYou can contact me at E.larramendi-cruz30@ncf.edu or visit my GitHub profile."
+  },
+  {
+    "objectID": "about.html#about-this-project",
+    "href": "about.html#about-this-project",
+    "title": "About",
+    "section": "About This Project",
+    "text": "About This Project\nThis project explores how high school cross country runners’ 5K race times evolve as athletes progress from their freshman to senior years. By tracking individual athletes across multiple seasons, this project investigates how physiological maturity, training, and gender relate to distance-running development. Beyond overall distribution shifts, the website examines individual standout performances, the diverse Ohio race courses and terrain conditions athletes encounter, and how high school runners transition to collegiate distances.\n\nMethodology\n\nData Collection: Longitudinal race records were compiled from Ohio High School Athletic Association (OHSAA) cross country championship meets between 2011 and 2020, archived on Baum’s Page.\nCohort Pairing: The analysis focuses on a balanced cohort of 2,000 runners (1,000 men and 1,000 women). Each runner has matched official 5K times from both their freshman and senior championship seasons to allow direct within-athlete paired comparisons.\nPerformance Metrics: Race times recorded as text strings (MM:SS) were converted into elapsed seconds to calculate exact individual progression (\\(\\text{Improvement} = \\text{Freshman Time} - \\text{Senior Time}\\)). Positive values represent time dropped (running faster).\nAnalytical & Visual Tools: Built with R and Quarto using the tidyverse. Interactive stacked dotplots using Plotly enable readers to inspect full time distributions and trace paired freshman-to-senior trajectories for any individual runner.\n\n\n\nKey Insights\n\nMen’s Progression: Male runners showed a substantial average improvement of 1 minute and 12 seconds, dropping from an average freshman time of 19:34 to 18:22 as seniors, with 87% running faster in their final year.\nWomen’s Progression: Female runners showed a more modest average improvement of 9 seconds, moving from 22:36 as freshmen to 22:28 as seniors, with 59% improving their times.\nInteractive Exploration: The project features interactive stacked dotplots where readers can hover over individual runners to trace their personal performance progression between freshman and senior year."
   },
   {
     "objectID": "courses.html",

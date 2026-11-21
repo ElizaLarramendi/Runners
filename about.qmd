@@ -10,11 +10,14 @@ You can contact me at [E.larramendi-cruz30@ncf.edu](mailto:E.larramendi-cruz30@n
 
 ## About This Project
 
-This project explores how high school cross country runners' 5K race times develop as athletes mature from freshman to senior year. By tracking individual runners over their high school careers, the project investigates whether age and physical development correlate with performance gains, and how those trends differ by gender.
+This project explores how high school cross country runners' 5K race times evolve as athletes progress from their freshman to senior years. By tracking individual athletes across multiple seasons, this project investigates how physiological maturity, training, and gender relate to distance-running development. Beyond overall distribution shifts, the website examines individual standout performances, the diverse Ohio race courses and terrain conditions athletes encounter, and how high school runners transition to collegiate distances.
 
-### Data & Methodology
+### Methodology
 
-The analysis uses longitudinal race data from 2,000 high school athletes (1,000 men and 1,000 women) competing in the Ohio High School Athletic Association (OHSAA) District Cross Country Championships between 2011 and 2020, archived on [Baum's Page](https://www.baumspage.com/cc/index.php). Each runner in the dataset has recorded 5K times from both their freshman and senior seasons, allowing for direct paired comparisons.
+- **Data Collection:** Longitudinal race records were compiled from Ohio High School Athletic Association (OHSAA) cross country championship meets between 2011 and 2020, archived on [Baum's Page](https://www.baumspage.com/cc/index.php).
+- **Cohort Pairing:** The analysis focuses on a balanced cohort of 2,000 runners (1,000 men and 1,000 women). Each runner has matched official 5K times from both their freshman and senior championship seasons to allow direct within-athlete paired comparisons.
+- **Performance Metrics:** Race times recorded as text strings (MM:SS) were converted into elapsed seconds to calculate exact individual progression ($\text{Improvement} = \text{Freshman Time} - \text{Senior Time}$). Positive values represent time dropped (running faster).
+- **Analytical & Visual Tools:** Built with R and Quarto using the tidyverse. Interactive stacked dotplots using Plotly enable readers to inspect full time distributions and trace paired freshman-to-senior trajectories for any individual runner.
 
 ### Key Insights
 

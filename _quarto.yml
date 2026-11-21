@@ -15,6 +15,8 @@ website:
         text: Spotlight
       - href: courses.qmd
         text: Courses
+      - href: future.qmd
+        text: Future
 
 format:
   html:

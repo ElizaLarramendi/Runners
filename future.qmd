@@ -1,0 +1,61 @@
+---
+title: "Future: Collegiate Running"
+execute:
+  echo: false
+  warning: false
+  message: false
+---
+
+This page follows standout high school athletes from our dataset who transitioned to collegiate cross country. In college competition, men typically race the **8K** (8,000 meters) and women race the **6K** (6,000 meters).
+
+Predictions are based on Pete Riegel's classic race prediction model ($T_2 = T_1 \times (D_2 / D_1)^{1.06}$), projecting the athlete's collegiate time from their high school senior 5K mark.
+
+```{r}
+library(readr)
+library(dplyr)
+library(knitr)
+
+college_runners <- read_csv("college_runners.csv", show_col_types = FALSE)
+```
+
+## Men (8K)
+
+These athletes moved from high school 5K competition to collegiate 8K races across NCAA Division I and II programs.
+
+```{r}
+college_runners |>
+  filter(gender == "Men") |>
+  arrange(college_seconds) |>
+  transmute(
+    Rank = row_number(),
+    Runner = name,
+    `High School` = high_school,
+    `Senior 5K Time` = senior_5k_time,
+    `Predicted 8K` = predicted_time,
+    College = college_school,
+    `College 8K Time` = college_time
+  ) |>
+  kable()
+```
+
+---
+
+## Women (6K)
+
+These athletes progressed from high school 5K racing to collegiate 6K courses nationwide.
+
+```{r}
+college_runners |>
+  filter(gender == "Women") |>
+  arrange(college_seconds) |>
+  transmute(
+    Rank = row_number(),
+    Runner = name,
+    `High School` = high_school,
+    `Senior 5K Time` = senior_5k_time,
+    `Predicted 6K` = predicted_time,
+    College = college_school,
+    `College 6K Time` = college_time
+  ) |>
+  kable()
+```

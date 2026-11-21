@@ -1,26 +1,26 @@
-athlete_id,name,gender,high_school,senior_year,senior_5k_time,college_school,college_distance,college_time,college_seconds
-714,Caleb Brown,Men,Shelby,2019,14:51.0,Oregon,8K,23:55.4,1435.4
-660,Vincent Mauri,Men,Howland,2018,14:54.0,Arizona State,8K,22:59.0,1379
-400,Dustin Horter,Men,Lakota East,2017,14:58.0,Indiana,8K,24:06.1,1446.1
-430,Arjun Jha,Men,Thomas Worthington,2017,14:59.0,Michigan,8K,23:42.9,1422.9
-294,Hunter Moore,Men,Olentangy Orange,2016,15:16.0,Walsh,8K,24:04.1,1444.1
-482,Andy Payne,Men,Thomas Worthington,2017,15:17.0,Eastern Michigan,8K,24:00.3,1440.3
-168,Nick Stricklen,Men,Lexington,2015,15:22.0,Akron,8K,25:54.2,1554.2
-443,Zach Kreft,Men,Buckeye Valley,2017,15:24.0,Walsh,8K,23:24.4,1404.4
-360,Cesar Arellano,Men,Dublin Scioto,2017,15:30.0,Bowling Green,8K,24:40.1,1480.1
-353,Zak Kirk,Men,Maumee,2016,15:40.0,Portland,8K,23:48.3,1428.3
-912,Sean Carney,Men,Hilliard Darby,2020,15:42.0,Ohio State,8K,24:40.0,1480
-832,Mhalicki Bronson,Men,Defiance,2019,15:43.0,Miami (Ohio),8K,24:26.0,1466
-892,Xavier Foehl,Men,Heath,2019,15:46.0,Walsh,8K,24:27.3,1467.3
-711,Bryce Conley,Men,Tippecanoe,2019,15:48.0,Dayton,8K,24:13.2,1453.2
-1877,Taylor Ewert,Women,Beavercreek,2019,17:03.0,Arkansas,6K,20:15.1,1215.1
-1644,Olivia Howell,Women,Solon,2018,17:52.0,Texas,6K,19:47.0,1187
-1087,Athena Welsh,Women,St. Thomas Aquinas,2015,18:01.0,Toledo,6K,20:58.0,1258
-1011,Brittany Atkinson,Women,Liberty Center,2014,18:02.0,Ohio State,6K,22:42.2,1362.2
-1855,Reilly Zink,Women,Granville,2019,18:04.0,Syracuse,6K,21:14.2,1274.2
-1103,Dominique Clairmonte,Women,Lexington,2015,18:08.0,NC State,6K,19:59.0,1199
-1607,Kaylie Kenne,Women,Medina Highland,2018,18:14.0,Kentucky,6K,20:51.3,1251.3
-1582,Allison Guagenti,Women,Olentangy Orange,2018,18:27.0,Ohio State,6K,20:40.0,1240
-1777,Jodie Pierce,Women,Beavercreek,2019,18:30.0,Fordham,6K,21:40.5,1300.5
-1725,Colbi Borland,Women,Big Walnut,2019,18:30.0,Lipscomb,6K,19:37.7,1177.7
-1932,Halle Hamilton,Women,Lexington,2020,18:35.0,Air Force,6K,20:06.9,1206.9
+athlete_id,name,gender,high_school,senior_year,senior_5k_time,college_school,college_distance,predicted_time,college_time,college_seconds
+714,Caleb Brown,Men,Shelby,2019,14:51:00,Oregon,8K,24:26.7,23:55:00,1435.4
+660,Vincent Mauri,Men,Howland,2018,14:54:00,Arizona State,8K,24:32.6,22:59:00,1379
+400,Dustin Horter,Men,Lakota East,2017,14:58:00,Indiana,8K,24:38.7,24:06:00,1446.1
+430,Arjun Jha,Men,Thomas Worthington,2017,14:59:00,Michigan,8K,24:41.1,23:42:00,1422.9
+294,Hunter Moore,Men,Olentangy Orange,2016,15:16:00,Walsh,8K,25:08.8,24:04:00,1444.1
+482,Andy Payne,Men,Thomas Worthington,2017,15:17:00,Eastern Michigan,8K,25:09.5,24:00:00,1440.3
+168,Nick Stricklen,Men,Lexington,2015,15:22:00,Akron,8K,25:17.8,25:54:00,1554.2
+443,Zach Kreft,Men,Buckeye Valley,2017,15:24:00,Walsh,8K,25:21.9,23:24:00,1404.4
+360,Cesar Arellano,Men,Dublin Scioto,2017,15:30:00,Bowling Green,8K,25:31.0,24:40:00,1480.1
+353,Zak Kirk,Men,Maumee,2016,15:40:00,Portland,8K,25:48.5,23:48:00,1428.3
+912,Sean Carney,Men,Hilliard Darby,2020,15:42:00,Ohio State,8K,25:50.6,24:40:00,1480
+832,Mhalicki Bronson,Men,Defiance,2019,15:43:00,Miami (Ohio),8K,25:52.6,24:26:00,1466
+892,Xavier Foehl,Men,Heath,2019,15:46:00,Walsh,8K,25:58.0,24:27:00,1467.3
+711,Bryce Conley,Men,Tippecanoe,2019,15:48:00,Dayton,8K,26:01.5,24:13:00,1453.2
+1877,Taylor Ewert,Women,Beavercreek,2019,17:03:00,Arkansas,6K,20:41.3,20:15:00,1215.1
+1644,Olivia Howell,Women,Solon,2018,17:52:00,Texas,6K,21:41.5,19:47:00,1187
+1087,Athena Welsh,Women,St. Thomas Aquinas,2015,18:01:00,Toledo,6K,21:52.1,20:58:00,1258
+1011,Brittany Atkinson,Women,Liberty Center,2014,18:02:00,Ohio State,6K,21:53.4,22:42:00,1362.2
+1855,Reilly Zink,Women,Granville,2019,18:04:00,Syracuse,6K,21:56.0,21:14:00,1274.2
+1103,Dominique Clairmonte,Women,Lexington,2015,18:08:00,NC State,6K,22:01.1,19:59:00,1199
+1607,Kaylie Kenne,Women,Medina Highland,2018,18:14:00,Kentucky,6K,22:08.3,20:51:00,1251.3
+1582,Allison Guagenti,Women,Olentangy Orange,2018,18:27:00,Ohio State,6K,22:24.0,20:40:00,1240
+1777,Jodie Pierce,Women,Beavercreek,2019,18:30:00,Fordham,6K,22:26.8,21:40:00,1300.5
+1725,Colbi Borland,Women,Big Walnut,2019,18:30:00,Lipscomb,6K,22:27.0,19:37:00,1177.7
+1932,Halle Hamilton,Women,Lexington,2020,18:35:00,Air Force,6K,22:33.2,20:06:00,1206.9

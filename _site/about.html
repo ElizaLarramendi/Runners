@@ -74,6 +74,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -110,6 +139,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./courses.html"> 
 <span class="menu-text">Courses</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./future.html"> 
+<span class="menu-text">Future</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -129,7 +162,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#about-me" id="toc-about-me" class="nav-link active" data-scroll-target="#about-me">About Me</a></li>
   <li><a href="#about-this-project" id="toc-about-this-project" class="nav-link" data-scroll-target="#about-this-project">About This Project</a>
   <ul class="collapse">
-  <li><a href="#data-methodology" id="toc-data-methodology" class="nav-link" data-scroll-target="#data-methodology">Data &amp; Methodology</a></li>
+  <li><a href="#methodology" id="toc-methodology" class="nav-link" data-scroll-target="#methodology">Methodology</a></li>
   <li><a href="#key-insights" id="toc-key-insights" class="nav-link" data-scroll-target="#key-insights">Key Insights</a></li>
   </ul></li>
   </ul>
@@ -164,10 +197,15 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="about-this-project" class="level2">
 <h2 class="anchored" data-anchor-id="about-this-project">About This Project</h2>
-<p>This project explores how high school cross country runners’ 5K race times develop as athletes mature from freshman to senior year. By tracking individual runners over their high school careers, the project investigates whether age and physical development correlate with performance gains, and how those trends differ by gender.</p>
-<section id="data-methodology" class="level3">
-<h3 class="anchored" data-anchor-id="data-methodology">Data &amp; Methodology</h3>
-<p>The analysis uses longitudinal race data from 2,000 high school athletes (1,000 men and 1,000 women) competing in the Ohio High School Athletic Association (OHSAA) District Cross Country Championships between 2011 and 2020, archived on <a href="https://www.baumspage.com/cc/index.php">Baum’s Page</a>. Each runner in the dataset has recorded 5K times from both their freshman and senior seasons, allowing for direct paired comparisons.</p>
+<p>This project explores how high school cross country runners’ 5K race times evolve as athletes progress from their freshman to senior years. By tracking individual athletes across multiple seasons, this project investigates how physiological maturity, training, and gender relate to distance-running development. Beyond overall distribution shifts, the website examines individual standout performances, the diverse Ohio race courses and terrain conditions athletes encounter, and how high school runners transition to collegiate distances.</p>
+<section id="methodology" class="level3">
+<h3 class="anchored" data-anchor-id="methodology">Methodology</h3>
+<ul>
+<li><strong>Data Collection:</strong> Longitudinal race records were compiled from Ohio High School Athletic Association (OHSAA) cross country championship meets between 2011 and 2020, archived on <a href="https://www.baumspage.com/cc/index.php">Baum’s Page</a>.</li>
+<li><strong>Cohort Pairing:</strong> The analysis focuses on a balanced cohort of 2,000 runners (1,000 men and 1,000 women). Each runner has matched official 5K times from both their freshman and senior championship seasons to allow direct within-athlete paired comparisons.</li>
+<li><strong>Performance Metrics:</strong> Race times recorded as text strings (MM:SS) were converted into elapsed seconds to calculate exact individual progression (<span class="math inline">\(\text{Improvement} = \text{Freshman Time} - \text{Senior Time}\)</span>). Positive values represent time dropped (running faster).</li>
+<li><strong>Analytical &amp; Visual Tools:</strong> Built with R and Quarto using the tidyverse. Interactive stacked dotplots using Plotly enable readers to inspect full time distributions and trace paired freshman-to-senior trajectories for any individual runner.</li>
+</ul>
 </section>
 <section id="key-insights" class="level3">
 <h3 class="anchored" data-anchor-id="key-insights">Key Insights</h3>
