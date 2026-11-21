@@ -8,7 +8,7 @@ execute:
 
 This page follows standout high school athletes from our dataset who transitioned to collegiate cross country. In college competition, men typically race the **8K** (8,000 meters) and women race the **6K** (6,000 meters).
 
-Predictions are based on Pete Riegel's classic race prediction model ($T_2 = T_1 \times (D_2 / D_1)^{1.06}$), projecting the athlete's collegiate time from their high school senior 5K mark.
+Predictions are based on Pete Riegel's classic race prediction model ($T_2 = T_1 \times (D_2 / D_1)^{1.06}$), projecting collegiate times from each athlete's high school senior 5K mark.
 
 ```{r}
 library(readr)
@@ -16,15 +16,52 @@ library(dplyr)
 library(knitr)
 
 college_runners <- read_csv("college_runners.csv", show_col_types = FALSE)
+hs_runners <- read_csv("hs_5k_2000_runners.csv", show_col_types = FALSE)
+
+# Format time differences into friendly strings
+format_diff <- \(sec) {
+  mins <- floor(abs(sec) / 60)
+  remainder <- round(abs(sec) %% 60)
+  label <- ifelse(sec >= 0, "faster", "slower")
+  if (mins > 0) {
+    sprintf("%d min %02d sec %s", mins, remainder, label)
+  } else {
+    sprintf("%d sec %s", remainder, label)
+  }
+}
+
+# Calculate improvement vs predicted collegiate time
+college_calc <- college_runners |>
+  left_join(hs_runners |> select(athlete_id, senior_seconds), by = "athlete_id") |>
+  mutate(
+    dist_km = ifelse(college_distance == "8K", 8, 6),
+    pred_sec = senior_seconds * (dist_km / 5)^1.06,
+    diff_sec = pred_sec - college_seconds,
+    diff_display = sapply(diff_sec, format_diff)
+  )
+
+men_data <- filter(college_calc, gender == "Men")
+women_data <- filter(college_calc, gender == "Women")
+
+men_avg_imp <- mean(men_data$diff_sec)
+women_avg_imp <- mean(women_data$diff_sec)
 ```
+
+## Average Improvement vs. Predictions
+
+When transitioning to college distance racing, athletes systematically surpassed high-school-based predictions:
+
+- **Men (8K):** Beat their predicted collegiate time by an average of **`r format_diff(men_avg_imp)`** (`r round(men_avg_imp, 1)` seconds).
+- **Women (6K):** Beat their predicted collegiate time by an average of **`r format_diff(women_avg_imp)`** (`r round(women_avg_imp, 1)` seconds).
+
+---
 
 ## Men (8K)
 
 These athletes moved from high school 5K competition to collegiate 8K races across NCAA Division I and II programs.
 
 ```{r}
-college_runners |>
-  filter(gender == "Men") |>
+men_data |>
   arrange(college_seconds) |>
   transmute(
     Rank = row_number(),
@@ -33,7 +70,8 @@ college_runners |>
     `Senior 5K Time` = senior_5k_time,
     `Predicted 8K` = predicted_time,
     College = college_school,
-    `College 8K Time` = college_time
+    `College 8K Time` = college_time,
+    `Improvement vs. Prediction` = diff_display
   ) |>
   kable()
 ```
@@ -45,8 +83,7 @@ college_runners |>
 These athletes progressed from high school 5K racing to collegiate 6K courses nationwide.
 
 ```{r}
-college_runners |>
-  filter(gender == "Women") |>
+women_data |>
   arrange(college_seconds) |>
   transmute(
     Rank = row_number(),
@@ -55,7 +92,8 @@ college_runners |>
     `Senior 5K Time` = senior_5k_time,
     `Predicted 6K` = predicted_time,
     College = college_school,
-    `College 6K Time` = college_time
+    `College 6K Time` = college_time,
+    `Improvement vs. Prediction` = diff_display
   ) |>
   kable()
 ```

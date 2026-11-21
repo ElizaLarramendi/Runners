@@ -143,6 +143,10 @@ window.Quarto = {
     <a class="nav-link active" href="./future.html" aria-current="page"> 
 <span class="menu-text">Future</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./summaries.html"> 
+<span class="menu-text">Summaries</span></a>
+  </li>  
 </ul>
           </div> <!-- /navcollapse -->
             <div class="quarto-navbar-tools">
@@ -159,7 +163,8 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#men-8k" id="toc-men-8k" class="nav-link active" data-scroll-target="#men-8k">Men (8K)</a></li>
+  <li><a href="#average-improvement-vs.-predictions" id="toc-average-improvement-vs.-predictions" class="nav-link active" data-scroll-target="#average-improvement-vs.-predictions">Average Improvement vs.&nbsp;Predictions</a></li>
+  <li><a href="#men-8k" id="toc-men-8k" class="nav-link" data-scroll-target="#men-8k">Men (8K)</a></li>
   <li><a href="#women-6k" id="toc-women-6k" class="nav-link" data-scroll-target="#women-6k">Women (6K)</a></li>
   </ul>
 </nav>
@@ -187,7 +192,16 @@ window.Quarto = {
 
 
 <p>This page follows standout high school athletes from our dataset who transitioned to collegiate cross country. In college competition, men typically race the <strong>8K</strong> (8,000 meters) and women race the <strong>6K</strong> (6,000 meters).</p>
-<p>Predictions are based on Pete Riegel’s classic race prediction model (<span class="math inline">\(T_2 = T_1 \times (D_2 / D_1)^{1.06}\)</span>), projecting the athlete’s collegiate time from their high school senior 5K mark.</p>
+<p>Predictions are based on Pete Riegel’s classic race prediction model (<span class="math inline">\(T_2 = T_1 \times (D_2 / D_1)^{1.06}\)</span>), projecting collegiate times from each athlete’s high school senior 5K mark.</p>
+<section id="average-improvement-vs.-predictions" class="level2">
+<h2 class="anchored" data-anchor-id="average-improvement-vs.-predictions">Average Improvement vs.&nbsp;Predictions</h2>
+<p>When transitioning to college distance racing, athletes systematically surpassed high-school-based predictions:</p>
+<ul>
+<li><strong>Men (8K):</strong> Beat their predicted collegiate time by an average of <strong>1 min 08 sec faster</strong> (68.4 seconds).</li>
+<li><strong>Women (6K):</strong> Beat their predicted collegiate time by an average of <strong>1 min 18 sec faster</strong> (77.5 seconds).</li>
+</ul>
+<hr>
+</section>
 <section id="men-8k" class="level2">
 <h2 class="anchored" data-anchor-id="men-8k">Men (8K)</h2>
 <p>These athletes moved from high school 5K competition to collegiate 8K races across NCAA Division I and II programs.</p>
@@ -195,13 +209,14 @@ window.Quarto = {
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <colgroup>
-<col style="width: 4%">
-<col style="width: 16%">
-<col style="width: 18%">
+<col style="width: 3%">
+<col style="width: 13%">
 <col style="width: 14%">
+<col style="width: 11%">
+<col style="width: 10%">
+<col style="width: 13%">
 <col style="width: 12%">
-<col style="width: 16%">
-<col style="width: 15%">
+<col style="width: 20%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -212,6 +227,7 @@ window.Quarto = {
 <th style="text-align: left;">Predicted 8K</th>
 <th style="text-align: left;">College</th>
 <th style="text-align: left;">College 8K Time</th>
+<th style="text-align: left;">Improvement vs.&nbsp;Prediction</th>
 </tr>
 </thead>
 <tbody>
@@ -223,6 +239,7 @@ window.Quarto = {
 <td style="text-align: left;">24:32:00</td>
 <td style="text-align: left;">Arizona State</td>
 <td style="text-align: left;">22:59:00</td>
+<td style="text-align: left;">1 min 34 sec faster</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">2</td>
@@ -232,6 +249,7 @@ window.Quarto = {
 <td style="text-align: left;">25:21:00</td>
 <td style="text-align: left;">Walsh</td>
 <td style="text-align: left;">23:24:00</td>
+<td style="text-align: left;">1 min 58 sec faster</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">3</td>
@@ -241,6 +259,7 @@ window.Quarto = {
 <td style="text-align: left;">24:41:00</td>
 <td style="text-align: left;">Michigan</td>
 <td style="text-align: left;">23:42:00</td>
+<td style="text-align: left;">58 sec faster</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">4</td>
@@ -250,6 +269,7 @@ window.Quarto = {
 <td style="text-align: left;">25:48:00</td>
 <td style="text-align: left;">Portland</td>
 <td style="text-align: left;">23:48:00</td>
+<td style="text-align: left;">2 min 00 sec faster</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">5</td>
@@ -259,6 +279,7 @@ window.Quarto = {
 <td style="text-align: left;">24:26:00</td>
 <td style="text-align: left;">Oregon</td>
 <td style="text-align: left;">23:55:00</td>
+<td style="text-align: left;">31 sec faster</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">6</td>
@@ -268,6 +289,7 @@ window.Quarto = {
 <td style="text-align: left;">25:09:00</td>
 <td style="text-align: left;">Eastern Michigan</td>
 <td style="text-align: left;">24:00:00</td>
+<td style="text-align: left;">1 min 09 sec faster</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">7</td>
@@ -277,6 +299,7 @@ window.Quarto = {
 <td style="text-align: left;">25:08:00</td>
 <td style="text-align: left;">Walsh</td>
 <td style="text-align: left;">24:04:00</td>
+<td style="text-align: left;">1 min 05 sec faster</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">8</td>
@@ -286,6 +309,7 @@ window.Quarto = {
 <td style="text-align: left;">24:38:00</td>
 <td style="text-align: left;">Indiana</td>
 <td style="text-align: left;">24:06:00</td>
+<td style="text-align: left;">33 sec faster</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">9</td>
@@ -295,6 +319,7 @@ window.Quarto = {
 <td style="text-align: left;">26:01:00</td>
 <td style="text-align: left;">Dayton</td>
 <td style="text-align: left;">24:13:00</td>
+<td style="text-align: left;">1 min 48 sec faster</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">10</td>
@@ -304,6 +329,7 @@ window.Quarto = {
 <td style="text-align: left;">25:52:00</td>
 <td style="text-align: left;">Miami (Ohio)</td>
 <td style="text-align: left;">24:26:00</td>
+<td style="text-align: left;">1 min 27 sec faster</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">11</td>
@@ -313,6 +339,7 @@ window.Quarto = {
 <td style="text-align: left;">25:58:00</td>
 <td style="text-align: left;">Walsh</td>
 <td style="text-align: left;">24:27:00</td>
+<td style="text-align: left;">1 min 31 sec faster</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">12</td>
@@ -322,6 +349,7 @@ window.Quarto = {
 <td style="text-align: left;">25:50:00</td>
 <td style="text-align: left;">Ohio State</td>
 <td style="text-align: left;">24:40:00</td>
+<td style="text-align: left;">1 min 11 sec faster</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">13</td>
@@ -331,6 +359,7 @@ window.Quarto = {
 <td style="text-align: left;">25:31:00</td>
 <td style="text-align: left;">Bowling Green</td>
 <td style="text-align: left;">24:40:00</td>
+<td style="text-align: left;">51 sec faster</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">14</td>
@@ -340,6 +369,7 @@ window.Quarto = {
 <td style="text-align: left;">25:17:00</td>
 <td style="text-align: left;">Akron</td>
 <td style="text-align: left;">25:54:00</td>
+<td style="text-align: left;">36 sec slower</td>
 </tr>
 </tbody>
 </table>
@@ -354,13 +384,14 @@ window.Quarto = {
 <div class="cell-output-display">
 <table class="caption-top table table-sm table-striped small">
 <colgroup>
-<col style="width: 5%">
-<col style="width: 21%">
-<col style="width: 19%">
-<col style="width: 15%">
-<col style="width: 13%">
-<col style="width: 11%">
+<col style="width: 3%">
 <col style="width: 16%">
+<col style="width: 14%">
+<col style="width: 11%">
+<col style="width: 10%">
+<col style="width: 8%">
+<col style="width: 12%">
+<col style="width: 21%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -371,6 +402,7 @@ window.Quarto = {
 <th style="text-align: left;">Predicted 6K</th>
 <th style="text-align: left;">College</th>
 <th style="text-align: left;">College 6K Time</th>
+<th style="text-align: left;">Improvement vs.&nbsp;Prediction</th>
 </tr>
 </thead>
 <tbody>
@@ -382,6 +414,7 @@ window.Quarto = {
 <td style="text-align: left;">22:27:00</td>
 <td style="text-align: left;">Lipscomb</td>
 <td style="text-align: left;">19:37:00</td>
+<td style="text-align: left;">2 min 49 sec faster</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">2</td>
@@ -391,6 +424,7 @@ window.Quarto = {
 <td style="text-align: left;">21:41:00</td>
 <td style="text-align: left;">Texas</td>
 <td style="text-align: left;">19:47:00</td>
+<td style="text-align: left;">1 min 55 sec faster</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">3</td>
@@ -400,6 +434,7 @@ window.Quarto = {
 <td style="text-align: left;">22:01:00</td>
 <td style="text-align: left;">NC State</td>
 <td style="text-align: left;">19:59:00</td>
+<td style="text-align: left;">2 min 02 sec faster</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">4</td>
@@ -409,6 +444,7 @@ window.Quarto = {
 <td style="text-align: left;">22:33:00</td>
 <td style="text-align: left;">Air Force</td>
 <td style="text-align: left;">20:06:00</td>
+<td style="text-align: left;">2 min 26 sec faster</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">5</td>
@@ -418,6 +454,7 @@ window.Quarto = {
 <td style="text-align: left;">20:41:00</td>
 <td style="text-align: left;">Arkansas</td>
 <td style="text-align: left;">20:15:00</td>
+<td style="text-align: left;">26 sec faster</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">6</td>
@@ -427,6 +464,7 @@ window.Quarto = {
 <td style="text-align: left;">22:24:00</td>
 <td style="text-align: left;">Ohio State</td>
 <td style="text-align: left;">20:40:00</td>
+<td style="text-align: left;">1 min 44 sec faster</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">7</td>
@@ -436,6 +474,7 @@ window.Quarto = {
 <td style="text-align: left;">22:08:00</td>
 <td style="text-align: left;">Kentucky</td>
 <td style="text-align: left;">20:51:00</td>
+<td style="text-align: left;">1 min 17 sec faster</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">8</td>
@@ -445,6 +484,7 @@ window.Quarto = {
 <td style="text-align: left;">21:52:00</td>
 <td style="text-align: left;">Toledo</td>
 <td style="text-align: left;">20:58:00</td>
+<td style="text-align: left;">54 sec faster</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">9</td>
@@ -454,6 +494,7 @@ window.Quarto = {
 <td style="text-align: left;">21:56:00</td>
 <td style="text-align: left;">Syracuse</td>
 <td style="text-align: left;">21:14:00</td>
+<td style="text-align: left;">42 sec faster</td>
 </tr>
 <tr class="even">
 <td style="text-align: right;">10</td>
@@ -463,6 +504,7 @@ window.Quarto = {
 <td style="text-align: left;">22:26:00</td>
 <td style="text-align: left;">Fordham</td>
 <td style="text-align: left;">21:40:00</td>
+<td style="text-align: left;">46 sec faster</td>
 </tr>
 <tr class="odd">
 <td style="text-align: right;">11</td>
@@ -472,6 +514,7 @@ window.Quarto = {
 <td style="text-align: left;">21:53:00</td>
 <td style="text-align: left;">Ohio State</td>
 <td style="text-align: left;">22:42:00</td>
+<td style="text-align: left;">49 sec slower</td>
 </tr>
 </tbody>
 </table>

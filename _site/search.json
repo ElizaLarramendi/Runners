@@ -35,46 +35,18 @@
     "text": "Summary\nComparing the two distributions reveals a clear difference in average 5K time improvement between men and women from freshman to senior year. Men improved substantially on average, dropping 1 minute and 12 seconds from 19:34 as freshmen to 18:22 as seniors (with 87% of male runners recording a faster senior time, visible in the clear leftward shift of the red dots). In contrast, women showed a much smaller average improvement of 9 seconds, moving from 22:36 to 22:28 (with 59% running faster as seniors and the freshman and senior distributions largely overlapping).\nData Source: Ohio High School Athletic Association (OHSAA) District Cross Country Championship results (2011–2020), archived on Baum’s Page."
   },
   {
-    "objectID": "future.html",
-    "href": "future.html",
-    "title": "Future: Collegiate Running",
+    "objectID": "courses.html",
+    "href": "courses.html",
+    "title": "Cross Country Courses",
     "section": "",
-    "text": "This page follows standout high school athletes from our dataset who transitioned to collegiate cross country. In college competition, men typically race the 8K (8,000 meters) and women race the 6K (6,000 meters).\nPredictions are based on Pete Riegel’s classic race prediction model (\\(T_2 = T_1 \\times (D_2 / D_1)^{1.06}\\)), projecting the athlete’s collegiate time from their high school senior 5K mark."
+    "text": "CautionCaution\n\n\n\nThe images shown on this page are for reference only to illustrate what the course conditions and terrain would have been like on race day (e.g., muddy wooded trails, steep hill climbs, flat lakeside turf); they do not actually show that course."
   },
   {
-    "objectID": "future.html#men-8k",
-    "href": "future.html#men-8k",
-    "title": "Future: Collegiate Running",
-    "section": "Men (8K)",
-    "text": "Men (8K)\nThese athletes moved from high school 5K competition to collegiate 8K races across NCAA Division I and II programs.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRank\nRunner\nHigh School\nSenior 5K Time\nPredicted 8K\nCollege\nCollege 8K Time\n\n\n\n\n1\nVincent Mauri\nHowland\n14:54:00\n24:32:00\nArizona State\n22:59:00\n\n\n2\nZach Kreft\nBuckeye Valley\n15:24:00\n25:21:00\nWalsh\n23:24:00\n\n\n3\nArjun Jha\nThomas Worthington\n14:59:00\n24:41:00\nMichigan\n23:42:00\n\n\n4\nZak Kirk\nMaumee\n15:40:00\n25:48:00\nPortland\n23:48:00\n\n\n5\nCaleb Brown\nShelby\n14:51:00\n24:26:00\nOregon\n23:55:00\n\n\n6\nAndy Payne\nThomas Worthington\n15:17:00\n25:09:00\nEastern Michigan\n24:00:00\n\n\n7\nHunter Moore\nOlentangy Orange\n15:16:00\n25:08:00\nWalsh\n24:04:00\n\n\n8\nDustin Horter\nLakota East\n14:58:00\n24:38:00\nIndiana\n24:06:00\n\n\n9\nBryce Conley\nTippecanoe\n15:48:00\n26:01:00\nDayton\n24:13:00\n\n\n10\nMhalicki Bronson\nDefiance\n15:43:00\n25:52:00\nMiami (Ohio)\n24:26:00\n\n\n11\nXavier Foehl\nHeath\n15:46:00\n25:58:00\nWalsh\n24:27:00\n\n\n12\nSean Carney\nHilliard Darby\n15:42:00\n25:50:00\nOhio State\n24:40:00\n\n\n13\nCesar Arellano\nDublin Scioto\n15:30:00\n25:31:00\nBowling Green\n24:40:00\n\n\n14\nNick Stricklen\nLexington\n15:22:00\n25:17:00\nAkron\n25:54:00"
-  },
-  {
-    "objectID": "future.html#women-6k",
-    "href": "future.html#women-6k",
-    "title": "Future: Collegiate Running",
-    "section": "Women (6K)",
-    "text": "Women (6K)\nThese athletes progressed from high school 5K racing to collegiate 6K courses nationwide.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRank\nRunner\nHigh School\nSenior 5K Time\nPredicted 6K\nCollege\nCollege 6K Time\n\n\n\n\n1\nColbi Borland\nBig Walnut\n18:30:00\n22:27:00\nLipscomb\n19:37:00\n\n\n2\nOlivia Howell\nSolon\n17:52:00\n21:41:00\nTexas\n19:47:00\n\n\n3\nDominique Clairmonte\nLexington\n18:08:00\n22:01:00\nNC State\n19:59:00\n\n\n4\nHalle Hamilton\nLexington\n18:35:00\n22:33:00\nAir Force\n20:06:00\n\n\n5\nTaylor Ewert\nBeavercreek\n17:03:00\n20:41:00\nArkansas\n20:15:00\n\n\n6\nAllison Guagenti\nOlentangy Orange\n18:27:00\n22:24:00\nOhio State\n20:40:00\n\n\n7\nKaylie Kenne\nMedina Highland\n18:14:00\n22:08:00\nKentucky\n20:51:00\n\n\n8\nAthena Welsh\nSt. Thomas Aquinas\n18:01:00\n21:52:00\nToledo\n20:58:00\n\n\n9\nReilly Zink\nGranville\n18:04:00\n21:56:00\nSyracuse\n21:14:00\n\n\n10\nJodie Pierce\nBeavercreek\n18:30:00\n22:26:00\nFordham\n21:40:00\n\n\n11\nBrittany Atkinson\nLiberty Center\n18:02:00\n21:53:00\nOhio State\n22:42:00"
-  },
-  {
-    "objectID": "spotlight.html",
-    "href": "spotlight.html",
-    "title": "Runner Spotlight",
-    "section": "",
-    "text": "This spotlight highlights standout athletes from our dataset of 2,000 Ohio high school cross country runners: the top 3 fastest runners and the top 3 who showed the most improvement from freshman to senior year, for both men and women (12 athletes total)."
-  },
-  {
-    "objectID": "spotlight.html#men",
-    "href": "spotlight.html#men",
-    "title": "Runner Spotlight",
-    "section": "Men",
-    "text": "Men\n\nFastest Men\nThese runners clocked the fastest senior-season 5K times among all male athletes.\n\n\n\n\n\nRank\nRunner\nSchool\nSenior 5K Time\nFreshman 5K Time\n\n\n\n\n1\nCaleb Brown\nShelby\n14:51:00\n16:58:00\n\n\n2\nVincent Mauri\nHowland\n14:54:00\n17:13:00\n\n\n3\nDustin Horter\nLak. East\n14:58:00\n15:42:00\n\n\n\n\n\n\n\nMost Improved Men\nThese runners achieved the largest time drop between freshman and senior year.\n\n\n\n\n\n\n\n\n\n\n\n\n\nRank\nRunner\nSchool\nTime Dropped\nFreshman 5K\nSenior 5K\n\n\n\n\n1\nEli Marshall\nMcD. Northwest\n9 min 40 sec\n28:32:00\n18:52:00\n\n\n2\nOmavi Hamilton\nEastmoor Acad.\n9 min 24 sec\n25:49:00\n16:24:00\n\n\n3\nQuinten Boggs\nChillicothe\n9 min 07 sec\n27:59:00\n18:52:00"
-  },
-  {
-    "objectID": "spotlight.html#women",
-    "href": "spotlight.html#women",
-    "title": "Runner Spotlight",
-    "section": "Women",
-    "text": "Women\n\nFastest Women\nThese runners clocked the fastest senior-season 5K times among all female athletes.\n\n\n\n\n\n\n\n\n\n\n\n\nRank\nRunner\nSchool\nSenior 5K Time\nFreshman 5K Time\n\n\n\n\n1\nTaylor Ewert\nBeavercreek\n17:03:00\n18:44:00\n\n\n2\nOlivia Howell\nSolon\n17:52:00\n18:35:00\n\n\n3\nAthena Welsh\nSt. Thomas Aquinas\n18:01:00\n19:59:00\n\n\n\n\n\n\n\nMost Improved Women\nThese runners achieved the largest time drop between freshman and senior year.\n\n\n\n\n\n\n\n\n\n\n\n\n\nRank\nRunner\nSchool\nTime Dropped\nFreshman 5K\nSenior 5K\n\n\n\n\n1\nLainee Stiver\nValley View\n10 min 24 sec\n31:58:00\n21:34:00\n\n\n2\nTalena Starn\nStrasburg-Franklin\n6 min 01 sec\n26:39:00\n20:38:00\n\n\n3\nAshlee Drury\nCardington-Lincoln\n5 min 48 sec\n37:41:00\n31:52:00"
+    "objectID": "courses.html#featured-ohio-cross-country-courses",
+    "href": "courses.html#featured-ohio-cross-country-courses",
+    "title": "Cross Country Courses",
+    "section": "Featured Ohio Cross Country Courses",
+    "text": "Featured Ohio Cross Country Courses\nExplore 10 distinct cross country courses across Ohio where high school athletes compete, featuring the runner, their recorded race time and year, and an example of the race conditions that day.\n\n\n\n\n\n\n1. Cedarville University (Elvin R. King Course)\n\nRunner: Elias Bezy (Lehman Catholic)\nYear: 2018\n5K Time: 19:40\nCourse Conditions: Rolling grass terrain with two gradual inclines; firm footing, open and breezy.\n\n\n\n\n\n\n\n\n\n\n\n2. Lorain County Community College Course\n\nRunner: Ryan Cummings (No. Olmsted)\nYear: 2016\n5K Time: 18:25\nCourse Conditions: Wooded trails that turned slick and muddy after morning rain; tight turns through the trees.\n\n\n\n\n\n\n\n\n\n\n\n3. Battelle Darby Creek Metro Park\n\nRunner: Micaila Mountain (Grove City)\nYear: 2012\n5K Time: 22:56\nCourse Conditions: Wide, flat prairie grass trails; dry, firm ground, flat and fast.\n\n\n\n\n\n\n\n\n\n\n\n4. Voice of America MetroPark\n\nRunner: Casey Murphy (Bellbrook)\nYear: 2015\n5K Time: 21:45\nCourse Conditions: Manicured turf and gravel paths around the lake; wide-open, flat, and very fast.\n\n\n\n\n\n\n\n\n\n\n\n5. Edgewater Park (Cleveland Metroparks)\n\nRunner: Eliza Clark (Seven Hills)\nYear: 2013\n5K Time: 24:53\nCourse Conditions: Open grassy hills along the lakefront; brisk headwinds off Lake Erie with firm turf footing.\n\n\n\n\n\n\n\n\n\n\n\n6. Hedges-Boyer Park (Tiffin)\n\nRunner: Mattie Lunceford (Plymouth)\nYear: 2012\n5K Time: 22:44\nCourse Conditions: Historic hilly course featuring the steep “Beast” hill; soft turf with muddy footing near creek crossings.\n\n\n\n\n\n\n\n\n\n\n\n7. Fortress Obetz\n\nRunner: Ricky Dungan (Wilmington)\nYear: 2018\n5K Time: 18:23\nCourse Conditions: Championship stadium course; wide spectator-lined straightaways, gravel mounds, and fast manicured turf.\n\n\n\n\n\n\n\n\n\n\n\n8. Sharon Woods Metro Park\n\nRunner: Ryan Cooper (Batavia)\nYear: 2014\n5K Time: 17:50\nCourse Conditions: Scenic lakeside loop with gentle rolling hills; well-packed dirt and crushed gravel under crisp autumn skies.\n\n\n\n\n\n\n\n\n\n\n\n9. Scioto Grove Metro Park\n\nRunner: Kristina Nusbaum (Carey)\nYear: 2012\n5K Time: 22:13\nCourse Conditions: Open savanna and river bluffs; uneven prairie grass paths with damp, soft turf in low sections.\n\n\n\n\n\n\n\n\n\n\n\n10. Blendon Woods Metro Park\n\nRunner: Natalie Fleming (Woodridge)\nYear: 2016\n5K Time: 19:29\nCourse Conditions: Dense fall forest trails and rolling ravines; leaf-covered dirt paths with slick roots and tight turns."
   },
   {
     "objectID": "about.html",
@@ -98,17 +70,66 @@
     "text": "About This Project\nThis project explores how high school cross country runners’ 5K race times evolve as athletes progress from their freshman to senior years. By tracking individual athletes across multiple seasons, this project investigates how physiological maturity, training, and gender relate to distance-running development. Beyond overall distribution shifts, the website examines individual standout performances, the diverse Ohio race courses and terrain conditions athletes encounter, and how high school runners transition to collegiate distances.\n\nMethodology\n\nData Collection: Longitudinal race records were compiled from Ohio High School Athletic Association (OHSAA) cross country championship meets between 2011 and 2020, archived on Baum’s Page.\nCohort Pairing: The analysis focuses on a balanced cohort of 2,000 runners (1,000 men and 1,000 women). Each runner has matched official 5K times from both their freshman and senior championship seasons to allow direct within-athlete paired comparisons.\nPerformance Metrics: Race times recorded as text strings (MM:SS) were converted into elapsed seconds to calculate exact individual progression (\\(\\text{Improvement} = \\text{Freshman Time} - \\text{Senior Time}\\)). Positive values represent time dropped (running faster).\nAnalytical & Visual Tools: Built with R and Quarto using the tidyverse. Interactive stacked dotplots using Plotly enable readers to inspect full time distributions and trace paired freshman-to-senior trajectories for any individual runner.\n\n\n\nKey Insights\n\nMen’s Progression: Male runners showed a substantial average improvement of 1 minute and 12 seconds, dropping from an average freshman time of 19:34 to 18:22 as seniors, with 87% running faster in their final year.\nWomen’s Progression: Female runners showed a more modest average improvement of 9 seconds, moving from 22:36 as freshmen to 22:28 as seniors, with 59% improving their times.\nInteractive Exploration: The project features interactive stacked dotplots where readers can hover over individual runners to trace their personal performance progression between freshman and senior year."
   },
   {
-    "objectID": "courses.html",
-    "href": "courses.html",
-    "title": "Cross Country Courses",
+    "objectID": "spotlight.html",
+    "href": "spotlight.html",
+    "title": "Runner Spotlight",
     "section": "",
-    "text": "CautionCaution\n\n\n\nThe images shown on this page are for reference only to illustrate what the course conditions and terrain would have been like on race day (e.g., muddy wooded trails, steep hill climbs, flat lakeside turf); they do not actually show that course."
+    "text": "This spotlight highlights standout athletes from our dataset of 2,000 Ohio high school cross country runners: the top 3 fastest runners and the top 3 who showed the most improvement from freshman to senior year, for both men and women (12 athletes total)."
   },
   {
-    "objectID": "courses.html#featured-ohio-cross-country-courses",
-    "href": "courses.html#featured-ohio-cross-country-courses",
-    "title": "Cross Country Courses",
-    "section": "Featured Ohio Cross Country Courses",
-    "text": "Featured Ohio Cross Country Courses\nExplore 10 distinct cross country courses across Ohio where high school athletes compete, featuring the runner, their recorded race time and year, and an example of the race conditions that day.\n\n\n\n\n\n\n1. Cedarville University (Elvin R. King Course)\n\nRunner: Elias Bezy (Lehman Catholic)\nYear: 2018\n5K Time: 19:40\nCourse Conditions: Rolling grass terrain with two gradual inclines; firm footing, open and breezy.\n\n\n\n\n\n\n\n\n\n\n\n2. Lorain County Community College Course\n\nRunner: Ryan Cummings (No. Olmsted)\nYear: 2016\n5K Time: 18:25\nCourse Conditions: Wooded trails that turned slick and muddy after morning rain; tight turns through the trees.\n\n\n\n\n\n\n\n\n\n\n\n3. Battelle Darby Creek Metro Park\n\nRunner: Micaila Mountain (Grove City)\nYear: 2012\n5K Time: 22:56\nCourse Conditions: Wide, flat prairie grass trails; dry, firm ground, flat and fast.\n\n\n\n\n\n\n\n\n\n\n\n4. Voice of America MetroPark\n\nRunner: Casey Murphy (Bellbrook)\nYear: 2015\n5K Time: 21:45\nCourse Conditions: Manicured turf and gravel paths around the lake; wide-open, flat, and very fast.\n\n\n\n\n\n\n\n\n\n\n\n5. Edgewater Park (Cleveland Metroparks)\n\nRunner: Eliza Clark (Seven Hills)\nYear: 2013\n5K Time: 24:53\nCourse Conditions: Open grassy hills along the lakefront; brisk headwinds off Lake Erie with firm turf footing.\n\n\n\n\n\n\n\n\n\n\n\n6. Hedges-Boyer Park (Tiffin)\n\nRunner: Mattie Lunceford (Plymouth)\nYear: 2012\n5K Time: 22:44\nCourse Conditions: Historic hilly course featuring the steep “Beast” hill; soft turf with muddy footing near creek crossings.\n\n\n\n\n\n\n\n\n\n\n\n7. Fortress Obetz\n\nRunner: Ricky Dungan (Wilmington)\nYear: 2018\n5K Time: 18:23\nCourse Conditions: Championship stadium course; wide spectator-lined straightaways, gravel mounds, and fast manicured turf.\n\n\n\n\n\n\n\n\n\n\n\n8. Sharon Woods Metro Park\n\nRunner: Ryan Cooper (Batavia)\nYear: 2014\n5K Time: 17:50\nCourse Conditions: Scenic lakeside loop with gentle rolling hills; well-packed dirt and crushed gravel under crisp autumn skies.\n\n\n\n\n\n\n\n\n\n\n\n9. Scioto Grove Metro Park\n\nRunner: Kristina Nusbaum (Carey)\nYear: 2012\n5K Time: 22:13\nCourse Conditions: Open savanna and river bluffs; uneven prairie grass paths with damp, soft turf in low sections.\n\n\n\n\n\n\n\n\n\n\n\n10. Blendon Woods Metro Park\n\nRunner: Natalie Fleming (Woodridge)\nYear: 2016\n5K Time: 19:29\nCourse Conditions: Dense fall forest trails and rolling ravines; leaf-covered dirt paths with slick roots and tight turns."
+    "objectID": "spotlight.html#men",
+    "href": "spotlight.html#men",
+    "title": "Runner Spotlight",
+    "section": "Men",
+    "text": "Men\n\nFastest Men\nThese runners clocked the fastest senior-season 5K times among all male athletes.\n\n\n\n\n\nRank\nRunner\nSchool\nSenior 5K Time\nFreshman 5K Time\n\n\n\n\n1\nCaleb Brown\nShelby\n14:51:00\n16:58:00\n\n\n2\nVincent Mauri\nHowland\n14:54:00\n17:13:00\n\n\n3\nDustin Horter\nLak. East\n14:58:00\n15:42:00\n\n\n\n\n\n\n\nMost Improved Men\nThese runners achieved the largest time drop between freshman and senior year.\n\n\n\n\n\n\n\n\n\n\n\n\n\nRank\nRunner\nSchool\nTime Dropped\nFreshman 5K\nSenior 5K\n\n\n\n\n1\nEli Marshall\nMcD. Northwest\n9 min 40 sec\n28:32:00\n18:52:00\n\n\n2\nOmavi Hamilton\nEastmoor Acad.\n9 min 24 sec\n25:49:00\n16:24:00\n\n\n3\nQuinten Boggs\nChillicothe\n9 min 07 sec\n27:59:00\n18:52:00"
+  },
+  {
+    "objectID": "spotlight.html#women",
+    "href": "spotlight.html#women",
+    "title": "Runner Spotlight",
+    "section": "Women",
+    "text": "Women\n\nFastest Women\nThese runners clocked the fastest senior-season 5K times among all female athletes.\n\n\n\n\n\n\n\n\n\n\n\n\nRank\nRunner\nSchool\nSenior 5K Time\nFreshman 5K Time\n\n\n\n\n1\nTaylor Ewert\nBeavercreek\n17:03:00\n18:44:00\n\n\n2\nOlivia Howell\nSolon\n17:52:00\n18:35:00\n\n\n3\nAthena Welsh\nSt. Thomas Aquinas\n18:01:00\n19:59:00\n\n\n\n\n\n\n\nMost Improved Women\nThese runners achieved the largest time drop between freshman and senior year.\n\n\n\n\n\n\n\n\n\n\n\n\n\nRank\nRunner\nSchool\nTime Dropped\nFreshman 5K\nSenior 5K\n\n\n\n\n1\nLainee Stiver\nValley View\n10 min 24 sec\n31:58:00\n21:34:00\n\n\n2\nTalena Starn\nStrasburg-Franklin\n6 min 01 sec\n26:39:00\n20:38:00\n\n\n3\nAshlee Drury\nCardington-Lincoln\n5 min 48 sec\n37:41:00\n31:52:00"
+  },
+  {
+    "objectID": "future.html",
+    "href": "future.html",
+    "title": "Future: Collegiate Running",
+    "section": "",
+    "text": "This page follows standout high school athletes from our dataset who transitioned to collegiate cross country. In college competition, men typically race the 8K (8,000 meters) and women race the 6K (6,000 meters).\nPredictions are based on Pete Riegel’s classic race prediction model (\\(T_2 = T_1 \\times (D_2 / D_1)^{1.06}\\)), projecting collegiate times from each athlete’s high school senior 5K mark."
+  },
+  {
+    "objectID": "future.html#average-improvement-vs.-predictions",
+    "href": "future.html#average-improvement-vs.-predictions",
+    "title": "Future: Collegiate Running",
+    "section": "Average Improvement vs. Predictions",
+    "text": "Average Improvement vs. Predictions\nWhen transitioning to college distance racing, athletes systematically surpassed high-school-based predictions:\n\nMen (8K): Beat their predicted collegiate time by an average of 1 min 08 sec faster (68.4 seconds).\nWomen (6K): Beat their predicted collegiate time by an average of 1 min 18 sec faster (77.5 seconds)."
+  },
+  {
+    "objectID": "future.html#men-8k",
+    "href": "future.html#men-8k",
+    "title": "Future: Collegiate Running",
+    "section": "Men (8K)",
+    "text": "Men (8K)\nThese athletes moved from high school 5K competition to collegiate 8K races across NCAA Division I and II programs.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRank\nRunner\nHigh School\nSenior 5K Time\nPredicted 8K\nCollege\nCollege 8K Time\nImprovement vs. Prediction\n\n\n\n\n1\nVincent Mauri\nHowland\n14:54:00\n24:32:00\nArizona State\n22:59:00\n1 min 34 sec faster\n\n\n2\nZach Kreft\nBuckeye Valley\n15:24:00\n25:21:00\nWalsh\n23:24:00\n1 min 58 sec faster\n\n\n3\nArjun Jha\nThomas Worthington\n14:59:00\n24:41:00\nMichigan\n23:42:00\n58 sec faster\n\n\n4\nZak Kirk\nMaumee\n15:40:00\n25:48:00\nPortland\n23:48:00\n2 min 00 sec faster\n\n\n5\nCaleb Brown\nShelby\n14:51:00\n24:26:00\nOregon\n23:55:00\n31 sec faster\n\n\n6\nAndy Payne\nThomas Worthington\n15:17:00\n25:09:00\nEastern Michigan\n24:00:00\n1 min 09 sec faster\n\n\n7\nHunter Moore\nOlentangy Orange\n15:16:00\n25:08:00\nWalsh\n24:04:00\n1 min 05 sec faster\n\n\n8\nDustin Horter\nLakota East\n14:58:00\n24:38:00\nIndiana\n24:06:00\n33 sec faster\n\n\n9\nBryce Conley\nTippecanoe\n15:48:00\n26:01:00\nDayton\n24:13:00\n1 min 48 sec faster\n\n\n10\nMhalicki Bronson\nDefiance\n15:43:00\n25:52:00\nMiami (Ohio)\n24:26:00\n1 min 27 sec faster\n\n\n11\nXavier Foehl\nHeath\n15:46:00\n25:58:00\nWalsh\n24:27:00\n1 min 31 sec faster\n\n\n12\nSean Carney\nHilliard Darby\n15:42:00\n25:50:00\nOhio State\n24:40:00\n1 min 11 sec faster\n\n\n13\nCesar Arellano\nDublin Scioto\n15:30:00\n25:31:00\nBowling Green\n24:40:00\n51 sec faster\n\n\n14\nNick Stricklen\nLexington\n15:22:00\n25:17:00\nAkron\n25:54:00\n36 sec slower"
+  },
+  {
+    "objectID": "future.html#women-6k",
+    "href": "future.html#women-6k",
+    "title": "Future: Collegiate Running",
+    "section": "Women (6K)",
+    "text": "Women (6K)\nThese athletes progressed from high school 5K racing to collegiate 6K courses nationwide.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nRank\nRunner\nHigh School\nSenior 5K Time\nPredicted 6K\nCollege\nCollege 6K Time\nImprovement vs. Prediction\n\n\n\n\n1\nColbi Borland\nBig Walnut\n18:30:00\n22:27:00\nLipscomb\n19:37:00\n2 min 49 sec faster\n\n\n2\nOlivia Howell\nSolon\n17:52:00\n21:41:00\nTexas\n19:47:00\n1 min 55 sec faster\n\n\n3\nDominique Clairmonte\nLexington\n18:08:00\n22:01:00\nNC State\n19:59:00\n2 min 02 sec faster\n\n\n4\nHalle Hamilton\nLexington\n18:35:00\n22:33:00\nAir Force\n20:06:00\n2 min 26 sec faster\n\n\n5\nTaylor Ewert\nBeavercreek\n17:03:00\n20:41:00\nArkansas\n20:15:00\n26 sec faster\n\n\n6\nAllison Guagenti\nOlentangy Orange\n18:27:00\n22:24:00\nOhio State\n20:40:00\n1 min 44 sec faster\n\n\n7\nKaylie Kenne\nMedina Highland\n18:14:00\n22:08:00\nKentucky\n20:51:00\n1 min 17 sec faster\n\n\n8\nAthena Welsh\nSt. Thomas Aquinas\n18:01:00\n21:52:00\nToledo\n20:58:00\n54 sec faster\n\n\n9\nReilly Zink\nGranville\n18:04:00\n21:56:00\nSyracuse\n21:14:00\n42 sec faster\n\n\n10\nJodie Pierce\nBeavercreek\n18:30:00\n22:26:00\nFordham\n21:40:00\n46 sec faster\n\n\n11\nBrittany Atkinson\nLiberty Center\n18:02:00\n21:53:00\nOhio State\n22:42:00\n49 sec slower"
+  },
+  {
+    "objectID": "summaries.html",
+    "href": "summaries.html",
+    "title": "Summaries",
+    "section": "",
+    "text": "As cross country athletes mature through adolescence and young adulthood, race times systematically improve due to a combination of physical maturation, cardiovascular development, and accumulated training volume. In our high school dataset, male athletes exhibited substantial gains from freshman to senior year, dropping an average of 1 minute and 12 seconds (with 87% improving), driven in part by adolescent surges in muscle mass, VO₂ max, and strength. Female athletes showed a more modest average improvement of 9 seconds (with 59% improving), reflecting the distinct physiological adaptations and changes in body composition typical during high school female development. For runners who continued into college, physical maturation and elevated training loads catalyzed further growth: collegiate athletes outperformed distance-based expectations by an average of over a minute (68 seconds faster in the men’s 8K and 78 seconds faster in the women’s 6K), demonstrating that aerobic development continues well into young adulthood."
+  },
+  {
+    "objectID": "summaries.html#performance-progression-across-age-and-maturation",
+    "href": "summaries.html#performance-progression-across-age-and-maturation",
+    "title": "Summaries",
+    "section": "",
+    "text": "As cross country athletes mature through adolescence and young adulthood, race times systematically improve due to a combination of physical maturation, cardiovascular development, and accumulated training volume. In our high school dataset, male athletes exhibited substantial gains from freshman to senior year, dropping an average of 1 minute and 12 seconds (with 87% improving), driven in part by adolescent surges in muscle mass, VO₂ max, and strength. Female athletes showed a more modest average improvement of 9 seconds (with 59% improving), reflecting the distinct physiological adaptations and changes in body composition typical during high school female development. For runners who continued into college, physical maturation and elevated training loads catalyzed further growth: collegiate athletes outperformed distance-based expectations by an average of over a minute (68 seconds faster in the men’s 8K and 78 seconds faster in the women’s 6K), demonstrating that aerobic development continues well into young adulthood."
   }
 ]

@@ -1,0 +1,7 @@
+---
+title: "Summaries"
+---
+
+## Performance Progression Across Age and Maturation
+
+As cross country athletes mature through adolescence and young adulthood, race times systematically improve due to a combination of physical maturation, cardiovascular development, and accumulated training volume. In our high school dataset, male athletes exhibited substantial gains from freshman to senior year, dropping an average of 1 minute and 12 seconds (with 87% improving), driven in part by adolescent surges in muscle mass, VO₂ max, and strength. Female athletes showed a more modest average improvement of 9 seconds (with 59% improving), reflecting the distinct physiological adaptations and changes in body composition typical during high school female development. For runners who continued into college, physical maturation and elevated training loads catalyzed further growth: collegiate athletes outperformed distance-based expectations by an average of over a minute (68 seconds faster in the men's 8K and 78 seconds faster in the women's 6K), demonstrating that aerobic development continues well into young adulthood.

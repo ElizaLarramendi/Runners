@@ -17,6 +17,8 @@ website:
         text: Courses
       - href: future.qmd
         text: Future
+      - href: summaries.qmd
+        text: Summaries
 
 format:
   html:
